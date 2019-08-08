@@ -1,9 +1,5 @@
-RSpec.describe NhlStats do
+RSpec.describe NHLStats do
   it "has a version number" do
-    expect(NhlStats::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+    expect(NHLStats::VERSION).not_to be nil
   end
 end

@@ -4,7 +4,7 @@ require "nhl_stats/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "nhl_stats"
-  spec.version       = NhlStats::VERSION
+  spec.version       = NHLStats::VERSION
   spec.authors       = ["Susan Wright"]
   spec.email         = ["wright1@ualberta.ca"]
 
