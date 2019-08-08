@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/people/8479314
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=9000, public
+      Date:
+      - Thu, 08 Aug 2019 21:00:50 GMT
+      Expires:
+      - Thu, 08 Aug 2019 23:30:50 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '5515'
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 adc2002956acc4d61bfbf3b973fdf247.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - AFFmGnIkBVRqevAATiN8A50rXm_VGBSgki6DBxMDdyyh2ubKJNXXsQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMTkuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAicGVvcGxlIiA6IFsgewogICAgImlkIiA6IDg0NzkzMTQsCiAgICAiZnVsbE5hbWUiIDogIk1hdHRoZXcgVGthY2h1ayIsCiAgICAibGluayIgOiAiL2FwaS92MS9wZW9wbGUvODQ3OTMxNCIsCiAgICAiZmlyc3ROYW1lIiA6ICJNYXR0aGV3IiwKICAgICJsYXN0TmFtZSIgOiAiVGthY2h1ayIsCiAgICAicHJpbWFyeU51bWJlciIgOiAiMTkiLAogICAgImJpcnRoRGF0ZSIgOiAiMTk5Ny0xMi0xMSIsCiAgICAiY3VycmVudEFnZSIgOiAyMSwKICAgICJiaXJ0aENpdHkiIDogIlNjb3R0c2RhbGUiLAogICAgImJpcnRoU3RhdGVQcm92aW5jZSIgOiAiQVoiLAogICAgImJpcnRoQ291bnRyeSIgOiAiVVNBIiwKICAgICJuYXRpb25hbGl0eSIgOiAiVVNBIiwKICAgICJoZWlnaHQiIDogIjYnIDJcIiIsCiAgICAid2VpZ2h0IiA6IDIwMiwKICAgICJhY3RpdmUiIDogdHJ1ZSwKICAgICJhbHRlcm5hdGVDYXB0YWluIiA6IGZhbHNlLAogICAgImNhcHRhaW4iIDogZmFsc2UsCiAgICAicm9va2llIiA6IGZhbHNlLAogICAgInNob290c0NhdGNoZXMiIDogIkwiLAogICAgInJvc3RlclN0YXR1cyIgOiAiWSIsCiAgICAiY3VycmVudFRlYW0iIDogewogICAgICAiaWQiIDogMjAsCiAgICAgICJuYW1lIiA6ICJDYWxnYXJ5IEZsYW1lcyIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL3RlYW1zLzIwIgogICAgfSwKICAgICJwcmltYXJ5UG9zaXRpb24iIDogewogICAgICAiY29kZSIgOiAiTCIsCiAgICAgICJuYW1lIiA6ICJMZWZ0IFdpbmciLAogICAgICAidHlwZSIgOiAiRm9yd2FyZCIsCiAgICAgICJhYmJyZXZpYXRpb24iIDogIkxXIgogICAgfQogIH0gXQp9
+    http_version: 
+  recorded_at: Thu, 08 Aug 2019 22:32:46 GMT
+recorded_with: VCR 5.0.0
