@@ -5,7 +5,8 @@ API_URL = "https://statsapi.web.nhl.com/api/v1/people"
 
 module NHLStats
   class Player
-    attr_reader :id, :full_name, :first_name, :last_name, :number, :birth_date, :nationality, :active
+    attr_reader :id, :full_name, :first_name, :last_name, :number, :birth_date,
+      :nationality, :active, :position
 
     def initialize(attributes)
       player = attributes.dig("people", 0)
@@ -17,6 +18,7 @@ module NHLStats
       @birth_date = Date.parse(player["birthDate"])
       @nationality = player["nationality"]
       @active = player["active"]
+      @position = player.dig("primaryPosition", "abbreviation")
     end
 
     def self.find(id)

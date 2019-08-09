@@ -20,6 +20,7 @@ RSpec.describe NHLStats::Player do
       {:field => :birth_date, :value => Date.new(1997, 12, 11)},
       {:field => :nationality, :value => "USA"},
       {:field => :active, :value => true},
+      {:field => :position, :value => "LW"},
     ].each do |hash|
       it "should return the correct value for #{hash[:field]}" do
         VCR.use_cassette("single_player") do
