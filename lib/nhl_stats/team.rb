@@ -21,5 +21,12 @@ module NHLStats
       attributes = JSON.parse(response.body).dig("teams", 0)
       new(attributes)
     end
+
+    def self.list(params = {})
+      response = Faraday.get("#{API_ROOT}/teams", params)
+      JSON.parse(response.body).
+        dig("teams").
+        map { |t| NHLStats::Team.new(t) }
+    end
   end
 end

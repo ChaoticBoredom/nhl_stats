@@ -33,4 +33,13 @@ RSpec.describe NHLStats::Team do
       end
     end
   end
+
+  describe ".list" do
+    it "should return an array of teams" do
+      VCR.use_cassette("list_team") do
+        team = NHLStats::Team.list
+        expect(team).to all( be_instance_of(NHLStats::Team) )
+      end
+    end
+  end
 end
