@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '524'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Fri, 09 Aug 2019 01:42:59 GMT
+      Expires:
+      - Fri, 09 Aug 2019 01:44:00 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 a3bd0eb50c22e4d5fbda56a30b96002d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C2
+      X-Amz-Cf-Id:
+      - ZIvYk4_A9EntTo7glRhnboHW2OkB394Z7axrSJWgeglGCPuFEOk1nA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMTkuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMjAsCiAgICAibmFtZSIgOiAiQ2FsZ2FyeSBGbGFtZXMiLAogICAgImxpbmsiIDogIi9hcGkvdjEvdGVhbXMvMjAiLAogICAgInZlbnVlIiA6IHsKICAgICAgImlkIiA6IDUwNzUsCiAgICAgICJuYW1lIiA6ICJTY290aWFiYW5rIFNhZGRsZWRvbWUiLAogICAgICAibGluayIgOiAiL2FwaS92MS92ZW51ZXMvNTA3NSIsCiAgICAgICJjaXR5IiA6ICJDYWxnYXJ5IiwKICAgICAgInRpbWVab25lIiA6IHsKICAgICAgICAiaWQiIDogIkFtZXJpY2EvRGVudmVyIiwKICAgICAgICAib2Zmc2V0IiA6IC02LAogICAgICAgICJ0eiIgOiAiTURUIgogICAgICB9CiAgICB9LAogICAgImFiYnJldmlhdGlvbiIgOiAiQ0dZIiwKICAgICJ0ZWFtTmFtZSIgOiAiRmxhbWVzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIkNhbGdhcnkiLAogICAgImZpcnN0WWVhck9mUGxheSIgOiAiMTk4MCIsCiAgICAiZGl2aXNpb24iIDogewogICAgICAiaWQiIDogMTUsCiAgICAgICJuYW1lIiA6ICJQYWNpZmljIiwKICAgICAgIm5hbWVTaG9ydCIgOiAiUEFDIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzE1IiwKICAgICAgImFiYnJldmlhdGlvbiIgOiAiUCIKICAgIH0sCiAgICAiY29uZmVyZW5jZSIgOiB7CiAgICAgICJpZCIgOiA1LAogICAgICAibmFtZSIgOiAiV2VzdGVybiIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2NvbmZlcmVuY2VzLzUiCiAgICB9LAogICAgImZyYW5jaGlzZSIgOiB7CiAgICAgICJmcmFuY2hpc2VJZCIgOiAyMSwKICAgICAgInRlYW1OYW1lIiA6ICJGbGFtZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIxIgogICAgfSwKICAgICJzaG9ydE5hbWUiIDogIkNhbGdhcnkiLAogICAgIm9mZmljaWFsU2l0ZVVybCIgOiAiaHR0cDovL3d3dy5jYWxnYXJ5ZmxhbWVzLmNvbS8iLAogICAgImZyYW5jaGlzZUlkIiA6IDIxLAogICAgImFjdGl2ZSIgOiB0cnVlCiAgfSBdCn0=
+    http_version: 
+  recorded_at: Fri, 09 Aug 2019 01:43:00 GMT
+recorded_with: VCR 5.0.0
