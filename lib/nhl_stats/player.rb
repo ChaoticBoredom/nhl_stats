@@ -9,6 +9,7 @@ module NHLStats
       @number = (player_data["primaryNumber"] || player_data["jerseyNumber"]).to_i
       @position = player_data.dig("primaryPosition", "abbreviation") || player_data.dig("position", "abbreviation")
 
+      # Roster response returns an array of players w/o the following
       if player_data.key?("firstName")
         @first_name = player_data["firstName"]
         @last_name = player_data["lastName"]

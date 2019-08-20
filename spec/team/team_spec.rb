@@ -43,7 +43,7 @@ RSpec.describe NHLStats::Team do
     end
 
     it "should accept filters for a limited team" do
-      VCR.use_cassette("list_teams_filted") do
+      VCR.use_cassette("list_teams_filtered") do
         teams = NHLStats::Team.list(:active => true)
         expect(teams.size).to eq 31
       end
