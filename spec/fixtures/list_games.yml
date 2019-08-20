@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/schedule
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=20, public
+      Date:
+      - Fri, 09 Aug 2019 17:55:54 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 7022a5bbf9872d4a09d63e6cdb457dfe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C2
+      X-Amz-Cf-Id:
+      - mTG95wNjfECbn73HjNfO9uckbtlESLwPNcQtZtAJrem4ZWZXGs-mvQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMTkuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidG90YWxJdGVtcyIgOiAwLAogICJ0b3RhbEV2ZW50cyIgOiAwLAogICJ0b3RhbEdhbWVzIiA6IDAsCiAgInRvdGFsTWF0Y2hlcyIgOiAwLAogICJ3YWl0IiA6IDEwLAogICJkYXRlcyIgOiBbIF0KfQ==
+    http_version: 
+  recorded_at: Fri, 09 Aug 2019 17:55:54 GMT
+recorded_with: VCR 5.0.0
