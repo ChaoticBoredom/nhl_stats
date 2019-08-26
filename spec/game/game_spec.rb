@@ -61,7 +61,7 @@ RSpec.describe NHLStats::Game do
     it "should return the the correct start time" do
       VCR.use_cassette("single_game") do
         game = NHLStats::Game.find(2018021196)
-        expect(game.date).to be_within(3600).of(Time.new(2018, 3, 29, 2))
+        expect(game.date).to be_within(3600).of(Time.new(2019, 3, 29, 2, 0, 0, "+00:00"))
       end
     end
   end
@@ -70,7 +70,7 @@ RSpec.describe NHLStats::Game do
     it "should return an array of games" do
       VCR.use_cassette("list_games") do
         games = NHLStats::Game.list
-        expect(games).to all( be_instance_of(NHLStats::Game) )
+        expect(games).to all(be_instance_of(NHLStats::Game))
       end
     end
 
@@ -85,18 +85,24 @@ RSpec.describe NHLStats::Game do
     end
 
     [
-      {:field => :id, :value => 2018021201},
-      {:field => :home_team_id, :value => 20},
-      {:field => :away_team_id, :value => 24},
-      {:field => :home_score, :value => 6},
-      {:field => :away_score, :value => 1},
-      {:field => :date, :value => DateTime.new(2019, 3, 29)},
+      { :field => :id, :value => 2018021201 },
+      { :field => :home_team_id, :value => 20 },
+      { :field => :away_team_id, :value => 24 },
+      { :field => :home_score, :value => 6 },
+      { :field => :away_score, :value => 1 },
     ].each do |hash|
       it "should return the correct value for #{hash[:field]}" do
         VCR.use_cassette("list_games_filtered_values") do
-          games = NHLStats::Game.list(:teamId => 24, :date => Date.new(2019, 3, 29).to_s)
+          games = NHLStats::Game.list(:teamId => 24, :date => Date.new(2019, 3, 29))
           expect(games.first.send(hash[:field])).to eq hash[:value]
         end
+      end
+    end
+
+    it "should return the correct start time" do
+      VCR.use_cassette("list_games_filtered_values") do
+        games = NHLStats::Game.list(:teamId => 24, :date => Date.new(2019, 3, 29))
+        expect(games.first.date).to be_within(3600).of(Time.new(2019, 3, 30, 1, 0, 0, "+00:00"))
       end
     end
   end
