@@ -4,12 +4,8 @@ module NHLStats
 
     def initialize(game_data)
       @id = game_data[:id] || game_data.dig("gamePk")
-      home = game_data.dig("teams", "home")
-      away = game_data.dig("teams", "away")
-      @home_team_id = home.dig("team", "id")
-      @away_team_id = away.dig("team", "id")
-      @home_score = home.dig("goals") || home.dig("score")
-      @away_score = away.dig("goals") || away.dig("score")
+      home_team_data(game_data)
+      away_team_data(game_data)
       @date = Time.parse(game_data.dig("periods", 0, "startTime") || game_data.dig("gameDate"))
     end
 
@@ -33,6 +29,20 @@ module NHLStats
         fetch("dates", []).
         map { |d| d.fetch("games", []).map { |g| NHLStats::Game.new(g) } }.
         flatten
+    end
+
+    private
+
+    def home_team_data(game_data)
+      home = game_data.dig("teams", "home")
+      @home_team_id = home.dig("team", "id")
+      @home_score = home.dig("goals") || home.dig("score")
+    end
+
+    def away_team_data(game_data)
+      away = game_data.dig("teams", "away")
+      @away_team_id = away.dig("team", "id")
+      @away_score = away.dig("goals") || away.dig("score")
     end
   end
 end
