@@ -69,9 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler
-  byebug
   nhl_stats!
-  pry
   pry-byebug
   rake
   rspec
