@@ -6,5 +6,9 @@ rvm:
   - 2.6.1
 before_install: gem install bundler -v 2.0.2
 
-script:
-  - bundle exec rubocop -c build/rubocop-config/.rubocop.yml
+jobs:
+  include:
+    - stage: test
+      script: bundle exec rspec
+    - stage: rubocop
+      scrip: bundle exec rubocop
