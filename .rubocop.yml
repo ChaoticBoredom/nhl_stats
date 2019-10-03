@@ -1,9 +1,15 @@
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 
 Metrics/LineLength:
   Max: 120
+
+Style/Documentation:
+  Enabled: false
 
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
