@@ -11,11 +11,7 @@ module NHLStats
 
       # Roster response returns an array of players w/o the following
       if player_data.key?("firstName")
-        @first_name = player_data["firstName"]
-        @last_name = player_data["lastName"]
-        @birth_date = Date.parse(player_data["birthDate"])
-        @nationality = player_data["nationality"]
-        @active = player_data["active"]
+        roster_response_data(player_data)
       else
         @active = true
       end
@@ -25,6 +21,16 @@ module NHLStats
       response = Faraday.get("#{API_ROOT}/people/#{id}")
       attributes = JSON.parse(response.body).dig("people", 0)
       new(attributes)
+    end
+
+    private
+
+    def roster_response_data(player_data)
+      @first_name = player_data["firstName"]
+      @last_name = player_data["lastName"]
+      @birth_date = Date.parse(player_data["birthDate"])
+      @nationality = player_data["nationality"]
+      @active = player_data["active"]
     end
   end
 end
