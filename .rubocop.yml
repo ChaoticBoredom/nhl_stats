@@ -12,7 +12,7 @@ Style/HashSyntax:
   EnforcedStyle: no_mixed_keys
 
 Style/NumericLiterals:
-  Strict: false
+  MinDigits: 12
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
