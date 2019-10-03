@@ -24,7 +24,7 @@ module NHLStats
     def self.find(id)
       response = Faraday.get("#{API_ROOT}/game/#{id}/linescore")
       attributes = JSON.parse(response.body)
-      new(attributes.merge({:id => id}))
+      new(attributes.merge(:id => id))
     end
 
     def self.list(params = {})
