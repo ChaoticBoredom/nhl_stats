@@ -1,0 +1,24 @@
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+
+Metrics/LineLength:
+  Max: 120
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: never
+
+Style/HashSyntax:
+  EnforcedStyle: no_mixed_keys
+
+Style/NumericLiterals:
+  Strict: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma 
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma 
