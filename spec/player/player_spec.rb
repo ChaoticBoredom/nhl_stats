@@ -12,15 +12,15 @@ RSpec.describe NHLStats::Player do
     end
 
     [
-      {:field => :id, :value => 8479314},
-      {:field => :full_name, :value => "Matthew Tkachuk"},
-      {:field => :first_name, :value => "Matthew"},
-      {:field => :last_name, :value => "Tkachuk"},
-      {:field => :number, :value => 19},
-      {:field => :birth_date, :value => Date.new(1997, 12, 11)},
-      {:field => :nationality, :value => "USA"},
-      {:field => :active, :value => true},
-      {:field => :position, :value => "LW"},
+      { :field => :id, :value => 8_479_314 },
+      { :field => :full_name, :value => "Matthew Tkachuk" },
+      { :field => :first_name, :value => "Matthew" },
+      { :field => :last_name, :value => "Tkachuk" },
+      { :field => :number, :value => 19 },
+      { :field => :birth_date, :value => Date.new(1997, 12, 11) },
+      { :field => :nationality, :value => "USA" },
+      { :field => :active, :value => true },
+      { :field => :position, :value => "LW" },
     ].each do |hash|
       it "should return the correct value for #{hash[:field]}" do
         VCR.use_cassette("single_player") do
