@@ -4,8 +4,10 @@ language: ruby
 cache: bundler
 rvm:
   - 2.6.1
+  - 2.6.3
 before_install: gem install bundler -v 2.0.2
 
-script:
-  - bundle exec rspec
-  - bundle exec rubocop
+matrix:
+  include:
+  - rvm: ruby-head
+    script: bundle exec rubocop
