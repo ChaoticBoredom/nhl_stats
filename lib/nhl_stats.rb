@@ -6,7 +6,7 @@ require "nhl_stats/team"
 require "faraday"
 require "json"
 
-API_ROOT = "https://statsapi.web.nhl.com/api/v1"
+API_ROOT = "https://statsapi.web.nhl.com/api/v1".freeze
 
 module NHLStats
   class Error < StandardError; end
