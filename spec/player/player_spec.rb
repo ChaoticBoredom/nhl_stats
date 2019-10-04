@@ -12,7 +12,7 @@ RSpec.describe NHLStats::Player do
     end
 
     [
-      { :field => :id, :value => 8_479_314 },
+      { :field => :id, :value => 8479314 },
       { :field => :full_name, :value => "Matthew Tkachuk" },
       { :field => :first_name, :value => "Matthew" },
       { :field => :last_name, :value => "Tkachuk" },
