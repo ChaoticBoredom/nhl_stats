@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/54
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Sun, 06 Oct 2019 00:30:34 GMT
+      Expires:
+      - Sun, 06 Oct 2019 00:31:34 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d8792dbd3191bbe722eba5b536b979c8.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C2
+      X-Amz-Cf-Id:
+      - 4EFRvGKnCz_5XhaJ98TiPlk5YUKpsyBWIrGsmQrhqfTSWknh3xj4ZQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMTkuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogNTQsCiAgICAibmFtZSIgOiAiVmVnYXMgR29sZGVuIEtuaWdodHMiLAogICAgImxpbmsiIDogIi9hcGkvdjEvdGVhbXMvNTQiLAogICAgInZlbnVlIiA6IHsKICAgICAgImlkIiA6IDUxNzgsCiAgICAgICJuYW1lIiA6ICJULU1vYmlsZSBBcmVuYSIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL3ZlbnVlcy81MTc4IiwKICAgICAgImNpdHkiIDogIkxhcyBWZWdhcyIsCiAgICAgICJ0aW1lWm9uZSIgOiB7CiAgICAgICAgImlkIiA6ICJBbWVyaWNhL0xvc19BbmdlbGVzIiwKICAgICAgICAib2Zmc2V0IiA6IC03LAogICAgICAgICJ0eiIgOiAiUERUIgogICAgICB9CiAgICB9LAogICAgImFiYnJldmlhdGlvbiIgOiAiVkdLIiwKICAgICJ0ZWFtTmFtZSIgOiAiR29sZGVuIEtuaWdodHMiLAogICAgImxvY2F0aW9uTmFtZSIgOiAiVmVnYXMiLAogICAgImZpcnN0WWVhck9mUGxheSIgOiAiMjAxNiIsCiAgICAiZGl2aXNpb24iIDogewogICAgICAiaWQiIDogMTUsCiAgICAgICJuYW1lIiA6ICJQYWNpZmljIiwKICAgICAgIm5hbWVTaG9ydCIgOiAiUEFDIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzE1IiwKICAgICAgImFiYnJldmlhdGlvbiIgOiAiUCIKICAgIH0sCiAgICAiY29uZmVyZW5jZSIgOiB7CiAgICAgICJpZCIgOiA1LAogICAgICAibmFtZSIgOiAiV2VzdGVybiIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2NvbmZlcmVuY2VzLzUiCiAgICB9LAogICAgImZyYW5jaGlzZSIgOiB7CiAgICAgICJmcmFuY2hpc2VJZCIgOiAzOCwKICAgICAgInRlYW1OYW1lIiA6ICJHb2xkZW4gS25pZ2h0cyIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2ZyYW5jaGlzZXMvMzgiCiAgICB9LAogICAgInNob3J0TmFtZSIgOiAiVmVnYXMiLAogICAgIm9mZmljaWFsU2l0ZVVybCIgOiAiaHR0cDovL3d3dy52ZWdhc2dvbGRlbmtuaWdodHMuY29tLyIsCiAgICAiZnJhbmNoaXNlSWQiIDogMzgsCiAgICAiYWN0aXZlIiA6IHRydWUKICB9IF0KfQ==
+    http_version: 
+  recorded_at: Sun, 06 Oct 2019 00:30:34 GMT
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/54/roster?season=19881989
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Sun, 06 Oct 2019 00:30:33 GMT
+      Expires:
+      - Sun, 06 Oct 2019 00:31:34 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 7022a5bbf9872d4a09d63e6cdb457dfe.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C2
+      X-Amz-Cf-Id:
+      - YrYij0wmFTifcppUHYQDc2dwYDDhYcztRE71WSpSh5akIhUk7zYd5A==
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "messageNumber" : 10,
+          "message" : "Object not found"
+        }
+    http_version: 
+  recorded_at: Sun, 06 Oct 2019 00:30:34 GMT
+recorded_with: VCR 5.0.0
