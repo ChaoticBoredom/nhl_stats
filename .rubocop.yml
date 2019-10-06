@@ -1,8 +1,11 @@
+Layout/AlignArguments:
+  EnforcedStyle: with_fixed_indentation
+
 Layout/DotPosition:
   EnforcedStyle: trailing
 
-Layout/AlignArguments:
-  EnforcedStyle: with_fixed_indentation
+Layout/IndentFirstArrayElement:
+  EnforcedStyle: consistent
 
 Metrics/BlockLength:
   Exclude:

@@ -1,0 +1,122 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/32
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Sun, 06 Oct 2019 01:33:17 GMT
+      Expires:
+      - Sun, 06 Oct 2019 01:34:17 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 536063cb28bfc05fcb7a78183dd89b73.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - ZHK0qPxM8Cpm7S3d37rh6VPRHbQ_piWYmQFoViaBgwqNtvY5VKcM4Q==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMTkuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMzIsCiAgICAibmFtZSIgOiAiUXVlYmVjIE5vcmRpcXVlcyIsCiAgICAibGluayIgOiAiL2FwaS92MS90ZWFtcy8zMiIsCiAgICAiYWJicmV2aWF0aW9uIiA6ICJRVUUiLAogICAgInRlYW1OYW1lIiA6ICJOb3JkaXF1ZXMiLAogICAgImxvY2F0aW9uTmFtZSIgOiAiUXVlYmVjIiwKICAgICJkaXZpc2lvbiIgOiB7CiAgICAgICJpZCIgOiAxMSwKICAgICAgIm5hbWUiIDogIkFkYW1zIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzExIgogICAgfSwKICAgICJjb25mZXJlbmNlIiA6IHsKICAgICAgImlkIiA6IDMsCiAgICAgICJuYW1lIiA6ICJQcmluY2Ugb2YgV2FsZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9jb25mZXJlbmNlcy8zIgogICAgfSwKICAgICJmcmFuY2hpc2UiIDogewogICAgICAiZnJhbmNoaXNlSWQiIDogMjcsCiAgICAgICJ0ZWFtTmFtZSIgOiAiQXZhbGFuY2hlIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZnJhbmNoaXNlcy8yNyIKICAgIH0sCiAgICAic2hvcnROYW1lIiA6ICJRdWViZWMiLAogICAgImZyYW5jaGlzZUlkIiA6IDI3LAogICAgImFjdGl2ZSIgOiBmYWxzZQogIH0gXQp9
+    http_version: 
+  recorded_at: Sun, 06 Oct 2019 01:33:17 GMT
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/32/roster
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Sun, 06 Oct 2019 01:33:17 GMT
+      Expires:
+      - Sun, 06 Oct 2019 01:34:18 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Error from cloudfront
+      Via:
+      - 1.1 c9b161639a9353c2354b895548ea9fca.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C1
+      X-Amz-Cf-Id:
+      - 0KEz1VwxNGlffuqsWw8IVbB_RS5LMDW8pltbEY7R4caSqFUvIRODjQ==
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "messageNumber" : 10,
+          "message" : "Object not found"
+        }
+    http_version: 
+  recorded_at: Sun, 06 Oct 2019 01:33:18 GMT
+recorded_with: VCR 5.0.0
