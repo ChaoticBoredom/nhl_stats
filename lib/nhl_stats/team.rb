@@ -10,10 +10,12 @@ module NHLStats
 
     def current_roster
       response = Faraday.get("#{API_ROOT}/teams/#{id}/roster")
-      players = JSON.parse(response.body).dig("roster")
-      players.map do |p_data|
-        NHLStats::Player.new(p_data.delete("person").merge(p_data))
-      end
+      roster_response_to_players(response)
+    end
+
+    def roster_for_season(season)
+      response = Faraday.get("#{API_ROOT}/teams/#{id}/roster", :season => season)
+      roster_response_to_players(response)
     end
 
     def self.find(id)
@@ -27,6 +29,14 @@ module NHLStats
       JSON.parse(response.body).
         dig("teams").
         map { |t| NHLStats::Team.new(t) }
+    end
+
+    private
+
+    def roster_response_to_players(response)
+      JSON.parse(response.body).fetch("roster", []).map do |p_data|
+        NHLStats::Player.new(p_data.delete("person").merge(p_data))
+      end
     end
   end
 end

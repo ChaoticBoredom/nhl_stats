@@ -10,6 +10,60 @@ RSpec.describe NHLStats::Team do
         expect(players).to all(be_instance_of(NHLStats::Player))
       end
     end
+
+    context "when requested for an inactive team" do
+      it "should not raise an error" do
+        VCR.use_cassette("team_roster_inactive") do
+          expect { NHLStats::Team.find(32).current_roster }.to_not raise_error
+        end
+      end
+
+      it "should return nothing" do
+        VCR.use_cassette("team_roster_inactive") do
+          expect(NHLStats::Team.find(32).current_roster).to eq []
+        end
+      end
+    end
+  end
+
+  describe "#roster_for_season" do
+    it "should return an array of Players" do
+      VCR.use_cassette("team_roster_for_1989") do
+        players = NHLStats::Team.find(20).roster_for_season("19881989")
+        expect(players).to all(be_instance_of(NHLStats::Player))
+      end
+    end
+
+    it "should return the correct roster of Players" do
+      VCR.use_cassette("team_roster_for_1989") do
+        players = NHLStats::Team.find(20).roster_for_season("19881989")
+        expect(players.map(&:full_name)).to match_array([
+          "Al MacInnis", "Brad McCrimmon", "Brian Glynn", "Brian MacLellan",
+          "Colin Patterson", "Dana Murzyn", "David Reierson", "Doug Gilmour",
+          "Gary Roberts", "Gary Suter", "Hakan Loob", "Jamie Macoun",
+          "Jim Peplinski", "Jiri Hrdina", "Joe Aloi", "Joe Mullen",
+          "Joe Nieuwendyk", "Joel Otto", "Ken Sabourin", "Lanny McDonald",
+          "Mark Hunter", "Mike Vernon", "Paul Ranheim", "Perry Berezan",
+          "Ric Nattress", "Richard Chernomaz", "Rick Lessard", "Rick Wamsley",
+          "Rob Ramage", "Sergei Priakin", "Shane Churla", "Stu Grimson",
+          "Theo Fleury", "Tim Hunter"
+        ])
+      end
+    end
+
+    context "when requested for a season with no roster" do
+      it "should not raise an error" do
+        VCR.use_cassette("team_roster_non-existant") do
+          expect { NHLStats::Team.find(54).roster_for_season("19881989") }.to_not raise_error
+        end
+      end
+
+      it "should return nothing" do
+        VCR.use_cassette("team_roster_non-existant") do
+          expect(NHLStats::Team.find(54).roster_for_season("19881989")).to eq []
+        end
+      end
+    end
   end
 
   describe ".find" do
