@@ -5,6 +5,7 @@ require "nhl_stats/team"
 
 require "faraday"
 require "json"
+require "time"
 
 API_ROOT = "https://statsapi.web.nhl.com/api/v1".freeze
 
