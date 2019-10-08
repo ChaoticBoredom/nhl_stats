@@ -2,8 +2,8 @@ PATH
   remote: .
   specs:
     nhl_stats (0.1.0)
-      faraday
-      json
+      faraday (~> 0.15.4)
+      json (~> 2.2.0)
 
 GEM
   remote: https://rubygems.org/
