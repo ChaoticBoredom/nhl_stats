@@ -9,12 +9,12 @@ Gem::Specification.new do |spec|
   spec.email         = ["wright1@ualberta.ca"]
 
   spec.summary       = "Gem wrapping the undocumented NHL stats API"
-  spec.description   = "Gem wrapping the undocumented NHL stats API"
+  spec.description   = "Wraps the undocumented NHL stats API"
   spec.homepage      = "https://shrugguy.com"
   spec.license       = "MIT"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://shrugguy.com"
+  spec.metadata["source_code_uri"] = "https://github.com/ChaoticBoredom/nhl_stats"
   spec.metadata["changelog_uri"] = "https://shrugguy.com"
 
   # Specify which files should be added to the gem when it is released.
