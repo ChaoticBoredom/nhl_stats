@@ -23,4 +23,13 @@ RSpec.describe NHLStats::Conference do
       end
     end
   end
+
+  describe ".list" do
+    it "should return an array of conferences" do
+      VCR.use_cassette("conference/list") do
+        conferences = NHLStats::Conference.list
+        expect(conferences).to all(be_instance_of(NHLStats::Conference))
+      end
+    end
+  end
 end
