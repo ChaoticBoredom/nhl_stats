@@ -24,4 +24,13 @@ RSpec.describe NHLStats::Division do
       end
     end
   end
+
+  describe ".list" do
+    it "should return an array of divisions" do
+      VCR.use_cassette("division/list") do
+        divisions = NHLStats::Division.list
+        expect(divisions).to all(be_instance_of(NHLStats::Division))
+      end
+    end
+  end
 end

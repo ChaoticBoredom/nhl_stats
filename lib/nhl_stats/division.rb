@@ -9,7 +9,16 @@ module NHLStats
     end
 
     def self.find(id)
+      response = Faraday.get("#{API_ROOT}/divisions/#{id}")
+      attributes = JSON.parse(response.body).dig("divisions", 0)
+      new(attributes)
+    end
 
+    def self.list
+      response = Faraday.get("#{API_ROOT}/divisions")
+      JSON.parse(response.body).
+        dig("divisions").
+        map { |d| NHLStats::Division.new(d) }
     end
   end
 end
