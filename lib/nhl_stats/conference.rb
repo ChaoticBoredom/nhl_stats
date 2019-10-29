@@ -3,6 +3,8 @@ module NHLStats
     attr_reader :id, :name
 
     def initialize(conference_data)
+      @id = conference_data["id"]
+      @name = conference_data["name"]
     end
 
     def self.find(id)
