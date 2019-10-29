@@ -14,7 +14,7 @@ RSpec.describe NHLStats::Division do
     [
       { :field => :id, :value => 17 },
       { :field => :name, :value => "Atlantic" },
-      { :field => :abbreviation, :value => "ATL"},
+      { :field => :abbreviation, :value => "ATL" },
     ].each do |hash|
       it "should return the correct value for #{hash[:field]}" do
         VCR.use_cassette("division/find") do
