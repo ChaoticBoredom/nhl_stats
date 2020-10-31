@@ -1,6 +1,7 @@
 require "nhl_stats/version"
 require "nhl_stats/conference"
 require "nhl_stats/division"
+require "nhl_stats/franchise"
 require "nhl_stats/game"
 require "nhl_stats/player"
 require "nhl_stats/team"
