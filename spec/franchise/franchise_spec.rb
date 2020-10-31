@@ -27,4 +27,20 @@ RSpec.describe NHLStats::Franchise do
       end
     end
   end
+
+  describe ".list" do
+    it "should return an array of franchises" do
+      VCR.use_cassette("list_franchises") do
+        franchises = NHLStats::Franchise.list
+        expect(franchises).to all(be_instance_of(NHLStats::Franchise))
+      end
+    end
+
+    it "should accept filters for a limited list" do
+      VCR.use_cassette("list_franchises_filtered") do
+        franchises = NHLStats::Franchise.list(:franchiseId => "2, 3, 5")
+        expect(franchises.size).to eq 3
+      end
+    end
+  end
 end

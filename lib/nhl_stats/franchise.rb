@@ -18,6 +18,10 @@ module NHLStats
     end
 
     def self.list(params = {})
+      response = Faraday.get("#{API_ROOT}/franchises", params)
+      JSON.parse(response.body).
+        dig("franchises").
+        map { |f| NHLStats::Franchise.new(f) }
     end
   end
 end
