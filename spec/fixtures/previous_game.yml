@@ -1,0 +1,119 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Sat, 31 Oct 2020 09:07:36 GMT
+      Expires:
+      - Sat, 31 Oct 2020 09:08:36 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 57a21088b36c69a83578b5a5579df58f.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C2
+      X-Amz-Cf-Id:
+      - 66CyA7YvvyL1r_ODl8DFOjH-NyVYgORksa62-ap4ynTvKoFHmEna1A==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjAuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMjAsCiAgICAibmFtZSIgOiAiQ2FsZ2FyeSBGbGFtZXMiLAogICAgImxpbmsiIDogIi9hcGkvdjEvdGVhbXMvMjAiLAogICAgInZlbnVlIiA6IHsKICAgICAgImlkIiA6IDUwNzUsCiAgICAgICJuYW1lIiA6ICJTY290aWFiYW5rIFNhZGRsZWRvbWUiLAogICAgICAibGluayIgOiAiL2FwaS92MS92ZW51ZXMvNTA3NSIsCiAgICAgICJjaXR5IiA6ICJDYWxnYXJ5IiwKICAgICAgInRpbWVab25lIiA6IHsKICAgICAgICAiaWQiIDogIkFtZXJpY2EvRGVudmVyIiwKICAgICAgICAib2Zmc2V0IiA6IC02LAogICAgICAgICJ0eiIgOiAiTURUIgogICAgICB9CiAgICB9LAogICAgImFiYnJldmlhdGlvbiIgOiAiQ0dZIiwKICAgICJ0ZWFtTmFtZSIgOiAiRmxhbWVzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIkNhbGdhcnkiLAogICAgImZpcnN0WWVhck9mUGxheSIgOiAiMTk4MCIsCiAgICAiZGl2aXNpb24iIDogewogICAgICAiaWQiIDogMTUsCiAgICAgICJuYW1lIiA6ICJQYWNpZmljIiwKICAgICAgIm5hbWVTaG9ydCIgOiAiUEFDIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzE1IiwKICAgICAgImFiYnJldmlhdGlvbiIgOiAiUCIKICAgIH0sCiAgICAiY29uZmVyZW5jZSIgOiB7CiAgICAgICJpZCIgOiA1LAogICAgICAibmFtZSIgOiAiV2VzdGVybiIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2NvbmZlcmVuY2VzLzUiCiAgICB9LAogICAgImZyYW5jaGlzZSIgOiB7CiAgICAgICJmcmFuY2hpc2VJZCIgOiAyMSwKICAgICAgInRlYW1OYW1lIiA6ICJGbGFtZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIxIgogICAgfSwKICAgICJzaG9ydE5hbWUiIDogIkNhbGdhcnkiLAogICAgIm9mZmljaWFsU2l0ZVVybCIgOiAiaHR0cDovL3d3dy5jYWxnYXJ5ZmxhbWVzLmNvbS8iLAogICAgImZyYW5jaGlzZUlkIiA6IDIxLAogICAgImFjdGl2ZSIgOiB0cnVlCiAgfSBdCn0=
+    http_version: 
+  recorded_at: Sat, 31 Oct 2020 09:07:36 GMT
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/20?expand=team.schedule.previous
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Sat, 31 Oct 2020 09:07:35 GMT
+      Expires:
+      - Sat, 31 Oct 2020 09:08:36 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 6a9b42e38e76b7d4a4044ebe0e0eca09.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - SEA19-C2
+      X-Amz-Cf-Id:
+      - Zscy7pktOZhGOjE-wMFIK2BMFOrI2f7qqWPEGBXwqViShKsdm7adLg==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjAuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMjAsCiAgICAibmFtZSIgOiAiQ2FsZ2FyeSBGbGFtZXMiLAogICAgImxpbmsiIDogIi9hcGkvdjEvdGVhbXMvMjAiLAogICAgInZlbnVlIiA6IHsKICAgICAgImlkIiA6IDUwNzUsCiAgICAgICJuYW1lIiA6ICJTY290aWFiYW5rIFNhZGRsZWRvbWUiLAogICAgICAibGluayIgOiAiL2FwaS92MS92ZW51ZXMvNTA3NSIsCiAgICAgICJjaXR5IiA6ICJDYWxnYXJ5IiwKICAgICAgInRpbWVab25lIiA6IHsKICAgICAgICAiaWQiIDogIkFtZXJpY2EvRGVudmVyIiwKICAgICAgICAib2Zmc2V0IiA6IC02LAogICAgICAgICJ0eiIgOiAiTURUIgogICAgICB9CiAgICB9LAogICAgImFiYnJldmlhdGlvbiIgOiAiQ0dZIiwKICAgICJ0ZWFtTmFtZSIgOiAiRmxhbWVzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIkNhbGdhcnkiLAogICAgImZpcnN0WWVhck9mUGxheSIgOiAiMTk4MCIsCiAgICAiZGl2aXNpb24iIDogewogICAgICAiaWQiIDogMTUsCiAgICAgICJuYW1lIiA6ICJQYWNpZmljIiwKICAgICAgIm5hbWVTaG9ydCIgOiAiUEFDIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzE1IiwKICAgICAgImFiYnJldmlhdGlvbiIgOiAiUCIKICAgIH0sCiAgICAiY29uZmVyZW5jZSIgOiB7CiAgICAgICJpZCIgOiA1LAogICAgICAibmFtZSIgOiAiV2VzdGVybiIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2NvbmZlcmVuY2VzLzUiCiAgICB9LAogICAgImZyYW5jaGlzZSIgOiB7CiAgICAgICJmcmFuY2hpc2VJZCIgOiAyMSwKICAgICAgInRlYW1OYW1lIiA6ICJGbGFtZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIxIgogICAgfSwKICAgICJwcmV2aW91c0dhbWVTY2hlZHVsZSIgOiB7CiAgICAgICJ0b3RhbEl0ZW1zIiA6IDEsCiAgICAgICJ0b3RhbEV2ZW50cyIgOiAwLAogICAgICAidG90YWxHYW1lcyIgOiAxLAogICAgICAidG90YWxNYXRjaGVzIiA6IDAsCiAgICAgICJkYXRlcyIgOiBbIHsKICAgICAgICAiZGF0ZSIgOiAiMjAyMC0wOC0yMCIsCiAgICAgICAgInRvdGFsSXRlbXMiIDogMSwKICAgICAgICAidG90YWxFdmVudHMiIDogMCwKICAgICAgICAidG90YWxHYW1lcyIgOiAxLAogICAgICAgICJ0b3RhbE1hdGNoZXMiIDogMCwKICAgICAgICAiZ2FtZXMiIDogWyB7CiAgICAgICAgICAiZ2FtZVBrIiA6IDIwMTkwMzAxNzYsCiAgICAgICAgICAibGluayIgOiAiL2FwaS92MS9nYW1lLzIwMTkwMzAxNzYvZmVlZC9saXZlIiwKICAgICAgICAgICJnYW1lVHlwZSIgOiAiUCIsCiAgICAgICAgICAic2Vhc29uIiA6ICIyMDE5MjAyMCIsCiAgICAgICAgICAiZ2FtZURhdGUiIDogIjIwMjAtMDgtMjFUMDI6MzA6MDBaIiwKICAgICAgICAgICJzdGF0dXMiIDogewogICAgICAgICAgICAiYWJzdHJhY3RHYW1lU3RhdGUiIDogIkZpbmFsIiwKICAgICAgICAgICAgImNvZGVkR2FtZVN0YXRlIiA6ICI3IiwKICAgICAgICAgICAgImRldGFpbGVkU3RhdGUiIDogIkZpbmFsIiwKICAgICAgICAgICAgInN0YXR1c0NvZGUiIDogIjciLAogICAgICAgICAgICAic3RhcnRUaW1lVEJEIiA6IGZhbHNlCiAgICAgICAgICB9LAogICAgICAgICAgInRlYW1zIiA6IHsKICAgICAgICAgICAgImF3YXkiIDogewogICAgICAgICAgICAgICJsZWFndWVSZWNvcmQiIDogewogICAgICAgICAgICAgICAgIndpbnMiIDogNSwKICAgICAgICAgICAgICAgICJsb3NzZXMiIDogNCwKICAgICAgICAgICAgICAgICJvdCIgOiAwLAogICAgICAgICAgICAgICAgInR5cGUiIDogImxlYWd1ZSIKICAgICAgICAgICAgICB9LAogICAgICAgICAgICAgICJzY29yZSIgOiA3LAogICAgICAgICAgICAgICJ0ZWFtIiA6IHsKICAgICAgICAgICAgICAgICJpZCIgOiAyNSwKICAgICAgICAgICAgICAgICJuYW1lIiA6ICJEYWxsYXMgU3RhcnMiLAogICAgICAgICAgICAgICAgImxpbmsiIDogIi9hcGkvdjEvdGVhbXMvMjUiCiAgICAgICAgICAgICAgfQogICAgICAgICAgICB9LAogICAgICAgICAgICAiaG9tZSIgOiB7CiAgICAgICAgICAgICAgImxlYWd1ZVJlY29yZCIgOiB7CiAgICAgICAgICAgICAgICAid2lucyIgOiA1LAogICAgICAgICAgICAgICAgImxvc3NlcyIgOiA1LAogICAgICAgICAgICAgICAgIm90IiA6IDAsCiAgICAgICAgICAgICAgICAidHlwZSIgOiAibGVhZ3VlIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInNjb3JlIiA6IDMsCiAgICAgICAgICAgICAgInRlYW0iIDogewogICAgICAgICAgICAgICAgImlkIiA6IDIwLAogICAgICAgICAgICAgICAgIm5hbWUiIDogIkNhbGdhcnkgRmxhbWVzIiwKICAgICAgICAgICAgICAgICJsaW5rIiA6ICIvYXBpL3YxL3RlYW1zLzIwIgogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgfSwKICAgICAgICAgICJ2ZW51ZSIgOiB7CiAgICAgICAgICAgICJpZCIgOiA1MTAwLAogICAgICAgICAgICAibmFtZSIgOiAiUm9nZXJzIFBsYWNlIiwKICAgICAgICAgICAgImxpbmsiIDogIi9hcGkvdjEvdmVudWVzLzUxMDAiCiAgICAgICAgICB9LAogICAgICAgICAgImNvbnRlbnQiIDogewogICAgICAgICAgICAibGluayIgOiAiL2FwaS92MS9nYW1lLzIwMTkwMzAxNzYvY29udGVudCIKICAgICAgICAgIH0KICAgICAgICB9IF0sCiAgICAgICAgImV2ZW50cyIgOiBbIF0sCiAgICAgICAgIm1hdGNoZXMiIDogWyBdCiAgICAgIH0gXQogICAgfSwKICAgICJzaG9ydE5hbWUiIDogIkNhbGdhcnkiLAogICAgIm9mZmljaWFsU2l0ZVVybCIgOiAiaHR0cDovL3d3dy5jYWxnYXJ5ZmxhbWVzLmNvbS8iLAogICAgImZyYW5jaGlzZUlkIiA6IDIxLAogICAgImFjdGl2ZSIgOiB0cnVlCiAgfSBdCn0=
+    http_version: 
+  recorded_at: Sat, 31 Oct 2020 09:07:36 GMT
+recorded_with: VCR 5.0.0

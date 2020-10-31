@@ -66,6 +66,30 @@ RSpec.describe NHLStats::Team do
     end
   end
 
+  describe "#previous_game" do
+    it "should return a Game" do
+      VCR.use_cassette("previous_game") do
+        team = NHLStats::Team.find(20)
+        expect(team.previous_game).to be_instance_of(NHLStats::Game)
+      end
+    end
+
+    # TODO: This test is brittle because updating the VCR will require
+    # updating the test data. Think of a better way to test this.
+    it "should return the most recent completed game" do
+      VCR.use_cassette("previous_game") do
+        team = NHLStats::Team.find(20)
+        previous_game = team.previous_game
+
+        expect(previous_game.date).to eq Time.new(2020, 8, 21, 2, 30, 0, 0)
+        expect(previous_game.away_team_id).to eq 25
+        expect(previous_game.away_score).to eq 7
+        expect(previous_game.home_team_id).to eq 20
+        expect(previous_game.home_score).to eq 3
+      end
+    end
+  end
+
   describe ".find" do
     it "should return a single team" do
       VCR.use_cassette("single_team") do
