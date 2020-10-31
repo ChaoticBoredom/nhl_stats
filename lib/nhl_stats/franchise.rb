@@ -11,6 +11,12 @@ module NHLStats
       @last_season = franchise_data["lastSeasonId"]
     end
 
+    def most_recent_team
+      response = Faraday.get("#{API_ROOT}/teams/#{most_recent_team_id}")
+      team_data = JSON.parse(response.body).dig("teams", 0)
+      NHLStats::Team.new(team_data)
+    end
+
     def self.find(id)
       response = Faraday.get("#{API_ROOT}/franchises/#{id}")
       attributes = JSON.parse(response.body).dig("franchises", 0)

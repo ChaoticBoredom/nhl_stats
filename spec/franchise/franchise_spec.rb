@@ -3,6 +3,15 @@ RSpec.describe NHLStats::Franchise do
     expect NHLStats::Franchise
   end
 
+  describe "#most_recent_team" do
+    it "should return a Team" do
+      VCR.use_cassette("most_recent_team") do
+        most_recent_team = NHLStats::Franchise.find(21).most_recent_team
+        expect(most_recent_team).to be_instance_of(NHLStats::Team)
+      end
+    end
+  end
+
   describe ".find" do
     it "should return a single franchise" do
       VCR.use_cassette("single_franchise") do
