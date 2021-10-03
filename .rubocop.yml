@@ -26,9 +26,6 @@ Style/HashSyntax:
 Style/NumericLiterals:
   MinDigits: 12
 
-Style/SingleArgumentDig:
-  Enabled: false
-
 Style/StringLiterals:
   EnforcedStyle: double_quotes
 
