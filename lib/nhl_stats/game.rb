@@ -3,10 +3,10 @@ module NHLStats
     attr_reader :id, :home_team_id, :away_team_id, :home_score, :away_score, :date
 
     def initialize(game_data)
-      @id = game_data[:id] || game_data.dig("gamePk")
+      @id = game_data[:id] || game_data["gamePk"]
       home_team_data(game_data)
       away_team_data(game_data)
-      @date = Time.parse(game_data.dig("periods", 0, "startTime") || game_data.dig("gameDate"))
+      @date = Time.parse(game_data.dig("periods", 0, "startTime") || game_data["gameDate"])
     end
 
     def home_team
@@ -36,13 +36,13 @@ module NHLStats
     def home_team_data(game_data)
       home = game_data.dig("teams", "home")
       @home_team_id = home.dig("team", "id")
-      @home_score = home.dig("goals") || home.dig("score")
+      @home_score = home["goals"] || home["score"]
     end
 
     def away_team_data(game_data)
       away = game_data.dig("teams", "away")
       @away_team_id = away.dig("team", "id")
-      @away_score = away.dig("goals") || away.dig("score")
+      @away_score = away["goals"] || away["score"]
     end
   end
 end

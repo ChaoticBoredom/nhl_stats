@@ -16,7 +16,7 @@ module NHLStats
     def self.list
       response = Faraday.get("#{API_ROOT}/conferences")
       JSON.parse(response.body).
-        dig("conferences").
+        fetch("conferences", []).
         map { |c| NHLStats::Conference.new(c) }
     end
   end

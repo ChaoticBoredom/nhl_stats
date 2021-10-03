@@ -3,7 +3,7 @@ module NHLStats
     attr_reader :id, :team_name, :location, :most_recent_team_id, :first_season, :last_season
 
     def initialize(franchise_data)
-      @id = franchise_data[:id] || franchise_data.dig("franchiseId")
+      @id = franchise_data[:id] || franchise_data["franchiseId"]
       @most_recent_team_id = franchise_data["mostRecentTeamId"]
       @location = franchise_data["locationName"]
       @team_name = franchise_data["teamName"]
@@ -26,7 +26,7 @@ module NHLStats
     def self.list(params = {})
       response = Faraday.get("#{API_ROOT}/franchises", params)
       JSON.parse(response.body).
-        dig("franchises").
+        fetch("franchises", []).
         map { |f| NHLStats::Franchise.new(f) }
     end
   end

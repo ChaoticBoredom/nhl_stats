@@ -32,7 +32,7 @@ module NHLStats
     def self.list(params = {})
       response = Faraday.get("#{API_ROOT}/teams", params)
       JSON.parse(response.body).
-        dig("teams").
+        fetch("teams", []).
         map { |t| NHLStats::Team.new(t) }
     end
 
