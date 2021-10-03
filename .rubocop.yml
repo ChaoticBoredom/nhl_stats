@@ -1,18 +1,18 @@
-Layout/AlignArguments:
+Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
 Layout/DotPosition:
   EnforcedStyle: trailing
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
+
+Layout/LineLength:
+  Max: 120
 
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
-
-Metrics/LineLength:
-  Max: 120
 
 Style/Documentation:
   Enabled: false
@@ -25,6 +25,9 @@ Style/HashSyntax:
 
 Style/NumericLiterals:
   MinDigits: 12
+
+Style/SingleArgumentDig:
+  Enabled: false
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
