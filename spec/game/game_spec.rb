@@ -49,6 +49,8 @@ RSpec.describe NHLStats::Game do
       { :field => :away_team_id, :value => 16 },
       { :field => :home_score, :value => 4 },
       { :field => :away_score, :value => 5 },
+      { :field => :home_team_name, :value => "San Jose Sharks" },
+      { :field => :away_team_name, :value => "Chicago Blackhawks" },
     ].each do |hash|
       it "should return the correct value for #{hash[:field]}" do
         VCR.use_cassette("single_game") do
@@ -90,6 +92,8 @@ RSpec.describe NHLStats::Game do
       { :field => :away_team_id, :value => 24 },
       { :field => :home_score, :value => 6 },
       { :field => :away_score, :value => 1 },
+      { :field => :home_team_name, :value => "Calgary Flames" },
+      { :field => :away_team_name, :value => "Anaheim Ducks" },
     ].each do |hash|
       it "should return the correct value for #{hash[:field]}" do
         VCR.use_cassette("list_games_filtered_values") do

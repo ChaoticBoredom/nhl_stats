@@ -119,8 +119,10 @@ RSpec.describe NHLStats::Team do
         expect(previous_game.date).to eq Time.new(2020, 8, 21, 2, 30, 0, 0)
         expect(previous_game.away_team_id).to eq 25
         expect(previous_game.away_score).to eq 7
+        expect(previous_game.away_team_name).to eq "Dallas Stars"
         expect(previous_game.home_team_id).to eq 20
         expect(previous_game.home_score).to eq 3
+        expect(previous_game.home_team_name).to eq "Calgary Flames"
       end
     end
   end

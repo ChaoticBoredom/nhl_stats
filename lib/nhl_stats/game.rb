@@ -1,6 +1,6 @@
 module NHLStats
   class Game
-    attr_reader :id, :home_team_id, :away_team_id, :home_score, :away_score, :date
+    attr_reader :id, :home_team_id, :away_team_id, :home_score, :away_score, :date, :home_team_name, :away_team_name
 
     def initialize(game_data)
       @id = game_data[:id] || game_data["gamePk"]
@@ -37,12 +37,14 @@ module NHLStats
       home = game_data.dig("teams", "home")
       @home_team_id = home.dig("team", "id")
       @home_score = home["goals"] || home["score"]
+      @home_team_name = home.dig("team", "name")
     end
 
     def away_team_data(game_data)
       away = game_data.dig("teams", "away")
       @away_team_id = away.dig("team", "id")
       @away_score = away["goals"] || away["score"]
+      @away_team_name = away.dig("team", "name")
     end
   end
 end
