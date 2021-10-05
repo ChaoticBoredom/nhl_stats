@@ -93,8 +93,10 @@ RSpec.describe NHLStats::Team do
 
           expect(next_game.date).to eq Time.new(2021, 10, 7, 0, 0, 0, 0)
           expect(next_game.away_team_id).to eq 20
+          expect(next_game.away_team_name).to eq "Calgary Flames"
           expect(next_game.away_score).to eq 0
           expect(next_game.home_team_id).to eq 52
+          expect(next_game.home_team_name).to eq "Winnipeg Jets"
           expect(next_game.home_score).to eq 0
         end
       end
