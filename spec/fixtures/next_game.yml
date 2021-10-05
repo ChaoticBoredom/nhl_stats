@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/20
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Tue, 05 Oct 2021 06:26:00 GMT
+      Expires:
+      - Tue, 05 Oct 2021 06:27:01 GMT
+      Server:
+      - Apache-Coyote/1.1
+      X-Edge-Origin-Shield-Skipped:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 040bad3c7f7db09654c66da40c719fb0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - JyV8FTgplHeZ8osO40h8VeYCRIDLPq6y3mPlzuuCSIljPLEzXiiQJA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjEuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMjAsCiAgICAibmFtZSIgOiAiQ2FsZ2FyeSBGbGFtZXMiLAogICAgImxpbmsiIDogIi9hcGkvdjEvdGVhbXMvMjAiLAogICAgInZlbnVlIiA6IHsKICAgICAgImlkIiA6IDUwNzUsCiAgICAgICJuYW1lIiA6ICJTY290aWFiYW5rIFNhZGRsZWRvbWUiLAogICAgICAibGluayIgOiAiL2FwaS92MS92ZW51ZXMvNTA3NSIsCiAgICAgICJjaXR5IiA6ICJDYWxnYXJ5IiwKICAgICAgInRpbWVab25lIiA6IHsKICAgICAgICAiaWQiIDogIkFtZXJpY2EvRGVudmVyIiwKICAgICAgICAib2Zmc2V0IiA6IC02LAogICAgICAgICJ0eiIgOiAiTURUIgogICAgICB9CiAgICB9LAogICAgImFiYnJldmlhdGlvbiIgOiAiQ0dZIiwKICAgICJ0ZWFtTmFtZSIgOiAiRmxhbWVzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIkNhbGdhcnkiLAogICAgImZpcnN0WWVhck9mUGxheSIgOiAiMTk4MCIsCiAgICAiZGl2aXNpb24iIDogewogICAgICAiaWQiIDogMTUsCiAgICAgICJuYW1lIiA6ICJQYWNpZmljIiwKICAgICAgIm5hbWVTaG9ydCIgOiAiUEFDIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzE1IiwKICAgICAgImFiYnJldmlhdGlvbiIgOiAiUCIKICAgIH0sCiAgICAiY29uZmVyZW5jZSIgOiB7CiAgICAgICJpZCIgOiA1LAogICAgICAibmFtZSIgOiAiV2VzdGVybiIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2NvbmZlcmVuY2VzLzUiCiAgICB9LAogICAgImZyYW5jaGlzZSIgOiB7CiAgICAgICJmcmFuY2hpc2VJZCIgOiAyMSwKICAgICAgInRlYW1OYW1lIiA6ICJGbGFtZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIxIgogICAgfSwKICAgICJzaG9ydE5hbWUiIDogIkNhbGdhcnkiLAogICAgIm9mZmljaWFsU2l0ZVVybCIgOiAiaHR0cDovL3d3dy5jYWxnYXJ5ZmxhbWVzLmNvbS8iLAogICAgImZyYW5jaGlzZUlkIiA6IDIxLAogICAgImFjdGl2ZSIgOiB0cnVlCiAgfSBdCn0=
+  recorded_at: Tue, 05 Oct 2021 06:25:59 GMT
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/20?expand=team.schedule.next
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Tue, 05 Oct 2021 06:26:00 GMT
+      Expires:
+      - Tue, 05 Oct 2021 06:27:01 GMT
+      Server:
+      - Apache-Coyote/1.1
+      X-Edge-Origin-Shield-Skipped:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d7782b26e589b8e1397d352f4daf0d59.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - Jpr9kE0hBxHEKkyBDe9hu2PDWRN-3_rx0jqGQkVTm1UIrqluViCRlQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjEuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMjAsCiAgICAibmFtZSIgOiAiQ2FsZ2FyeSBGbGFtZXMiLAogICAgImxpbmsiIDogIi9hcGkvdjEvdGVhbXMvMjAiLAogICAgInZlbnVlIiA6IHsKICAgICAgImlkIiA6IDUwNzUsCiAgICAgICJuYW1lIiA6ICJTY290aWFiYW5rIFNhZGRsZWRvbWUiLAogICAgICAibGluayIgOiAiL2FwaS92MS92ZW51ZXMvNTA3NSIsCiAgICAgICJjaXR5IiA6ICJDYWxnYXJ5IiwKICAgICAgInRpbWVab25lIiA6IHsKICAgICAgICAiaWQiIDogIkFtZXJpY2EvRGVudmVyIiwKICAgICAgICAib2Zmc2V0IiA6IC02LAogICAgICAgICJ0eiIgOiAiTURUIgogICAgICB9CiAgICB9LAogICAgImFiYnJldmlhdGlvbiIgOiAiQ0dZIiwKICAgICJ0ZWFtTmFtZSIgOiAiRmxhbWVzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIkNhbGdhcnkiLAogICAgImZpcnN0WWVhck9mUGxheSIgOiAiMTk4MCIsCiAgICAiZGl2aXNpb24iIDogewogICAgICAiaWQiIDogMTUsCiAgICAgICJuYW1lIiA6ICJQYWNpZmljIiwKICAgICAgIm5hbWVTaG9ydCIgOiAiUEFDIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzE1IiwKICAgICAgImFiYnJldmlhdGlvbiIgOiAiUCIKICAgIH0sCiAgICAiY29uZmVyZW5jZSIgOiB7CiAgICAgICJpZCIgOiA1LAogICAgICAibmFtZSIgOiAiV2VzdGVybiIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2NvbmZlcmVuY2VzLzUiCiAgICB9LAogICAgImZyYW5jaGlzZSIgOiB7CiAgICAgICJmcmFuY2hpc2VJZCIgOiAyMSwKICAgICAgInRlYW1OYW1lIiA6ICJGbGFtZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIxIgogICAgfSwKICAgICJuZXh0R2FtZVNjaGVkdWxlIiA6IHsKICAgICAgInRvdGFsSXRlbXMiIDogMSwKICAgICAgInRvdGFsRXZlbnRzIiA6IDAsCiAgICAgICJ0b3RhbEdhbWVzIiA6IDEsCiAgICAgICJ0b3RhbE1hdGNoZXMiIDogMCwKICAgICAgIm1ldGFEYXRhIiA6IHsKICAgICAgICAidGltZVN0YW1wIiA6ICIyMDIxMTAwNV8wNjI2MDEiCiAgICAgIH0sCiAgICAgICJkYXRlcyIgOiBbIHsKICAgICAgICAiZGF0ZSIgOiAiMjAyMS0xMC0wNiIsCiAgICAgICAgInRvdGFsSXRlbXMiIDogMSwKICAgICAgICAidG90YWxFdmVudHMiIDogMCwKICAgICAgICAidG90YWxHYW1lcyIgOiAxLAogICAgICAgICJ0b3RhbE1hdGNoZXMiIDogMCwKICAgICAgICAiZ2FtZXMiIDogWyB7CiAgICAgICAgICAiZ2FtZVBrIiA6IDIwMjEwMTAwNzksCiAgICAgICAgICAibGluayIgOiAiL2FwaS92MS9nYW1lLzIwMjEwMTAwNzkvZmVlZC9saXZlIiwKICAgICAgICAgICJnYW1lVHlwZSIgOiAiUFIiLAogICAgICAgICAgInNlYXNvbiIgOiAiMjAyMTIwMjIiLAogICAgICAgICAgImdhbWVEYXRlIiA6ICIyMDIxLTEwLTA3VDAwOjAwOjAwWiIsCiAgICAgICAgICAic3RhdHVzIiA6IHsKICAgICAgICAgICAgImFic3RyYWN0R2FtZVN0YXRlIiA6ICJQcmV2aWV3IiwKICAgICAgICAgICAgImNvZGVkR2FtZVN0YXRlIiA6ICIxIiwKICAgICAgICAgICAgImRldGFpbGVkU3RhdGUiIDogIlNjaGVkdWxlZCIsCiAgICAgICAgICAgICJzdGF0dXNDb2RlIiA6ICIxIiwKICAgICAgICAgICAgInN0YXJ0VGltZVRCRCIgOiBmYWxzZQogICAgICAgICAgfSwKICAgICAgICAgICJ0ZWFtcyIgOiB7CiAgICAgICAgICAgICJhd2F5IiA6IHsKICAgICAgICAgICAgICAibGVhZ3VlUmVjb3JkIiA6IHsKICAgICAgICAgICAgICAgICJ3aW5zIiA6IDAsCiAgICAgICAgICAgICAgICAibG9zc2VzIiA6IDAsCiAgICAgICAgICAgICAgICAidHlwZSIgOiAibGVhZ3VlIgogICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgInNjb3JlIiA6IDAsCiAgICAgICAgICAgICAgInRlYW0iIDogewogICAgICAgICAgICAgICAgImlkIiA6IDIwLAogICAgICAgICAgICAgICAgIm5hbWUiIDogIkNhbGdhcnkgRmxhbWVzIiwKICAgICAgICAgICAgICAgICJsaW5rIiA6ICIvYXBpL3YxL3RlYW1zLzIwIgogICAgICAgICAgICAgIH0KICAgICAgICAgICAgfSwKICAgICAgICAgICAgImhvbWUiIDogewogICAgICAgICAgICAgICJsZWFndWVSZWNvcmQiIDogewogICAgICAgICAgICAgICAgIndpbnMiIDogMCwKICAgICAgICAgICAgICAgICJsb3NzZXMiIDogMCwKICAgICAgICAgICAgICAgICJ0eXBlIiA6ICJsZWFndWUiCiAgICAgICAgICAgICAgfSwKICAgICAgICAgICAgICAic2NvcmUiIDogMCwKICAgICAgICAgICAgICAidGVhbSIgOiB7CiAgICAgICAgICAgICAgICAiaWQiIDogNTIsCiAgICAgICAgICAgICAgICAibmFtZSIgOiAiV2lubmlwZWcgSmV0cyIsCiAgICAgICAgICAgICAgICAibGluayIgOiAiL2FwaS92MS90ZWFtcy81MiIKICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICAgIH0sCiAgICAgICAgICAidmVudWUiIDogewogICAgICAgICAgICAiaWQiIDogNTA1OCwKICAgICAgICAgICAgIm5hbWUiIDogIkNhbmFkYSBMaWZlIENlbnRyZSIsCiAgICAgICAgICAgICJsaW5rIiA6ICIvYXBpL3YxL3ZlbnVlcy81MDU4IgogICAgICAgICAgfSwKICAgICAgICAgICJjb250ZW50IiA6IHsKICAgICAgICAgICAgImxpbmsiIDogIi9hcGkvdjEvZ2FtZS8yMDIxMDEwMDc5L2NvbnRlbnQiCiAgICAgICAgICB9CiAgICAgICAgfSBdLAogICAgICAgICJldmVudHMiIDogWyBdLAogICAgICAgICJtYXRjaGVzIiA6IFsgXQogICAgICB9IF0KICAgIH0sCiAgICAic2hvcnROYW1lIiA6ICJDYWxnYXJ5IiwKICAgICJvZmZpY2lhbFNpdGVVcmwiIDogImh0dHA6Ly93d3cuY2FsZ2FyeWZsYW1lcy5jb20vIiwKICAgICJmcmFuY2hpc2VJZCIgOiAyMSwKICAgICJhY3RpdmUiIDogdHJ1ZQogIH0gXQp9
+  recorded_at: Tue, 05 Oct 2021 06:26:00 GMT
+recorded_with: VCR 6.0.0
