@@ -50,31 +50,34 @@ module NHLStats
     end
 
     def next_game_response_to_game(response)
-      game_data = JSON.parse(response.body).dig(
+      dig_array = [
         "teams",
         0,
         "nextGameSchedule",
         "dates",
         0,
         "games",
-        0
-      )
+        0,
+      ]
 
+      game_data = JSON.parse(response.body).dig(*dig_array)
       return nil unless game_data
 
       NHLStats::Game.new(game_data)
     end
 
     def previous_game_response_to_game(response)
-      game_data = JSON.parse(response.body).dig(
+      dig_array = [
         "teams",
         0,
         "previousGameSchedule",
         "dates",
         0,
         "games",
-        0
-      )
+        0,
+      ]
+
+      game_data = JSON.parse(response.body).dig(*dig_array)
 
       NHLStats::Game.new(game_data)
     end
