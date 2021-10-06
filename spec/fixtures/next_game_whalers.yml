@@ -1,0 +1,121 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/34
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Tue, 05 Oct 2021 06:25:59 GMT
+      Expires:
+      - Tue, 05 Oct 2021 06:27:00 GMT
+      Server:
+      - Apache-Coyote/1.1
+      X-Edge-Origin-Shield-Skipped:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 040bad3c7f7db09654c66da40c719fb0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - 7N77i0PtU9oB5IdWkn-TR2W2vFdHk0sZrgXNfUFEti0Yuz4uw6q6mQ==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjEuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMzQsCiAgICAibmFtZSIgOiAiSGFydGZvcmQgV2hhbGVycyIsCiAgICAibGluayIgOiAiL2FwaS92MS90ZWFtcy8zNCIsCiAgICAiYWJicmV2aWF0aW9uIiA6ICJIRkQiLAogICAgInRlYW1OYW1lIiA6ICJXaGFsZXJzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIkhhcnRmb3JkIiwKICAgICJkaXZpc2lvbiIgOiB7CiAgICAgICJpZCIgOiAxMSwKICAgICAgIm5hbWUiIDogIkFkYW1zIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzExIgogICAgfSwKICAgICJjb25mZXJlbmNlIiA6IHsKICAgICAgImlkIiA6IDMsCiAgICAgICJuYW1lIiA6ICJQcmluY2Ugb2YgV2FsZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9jb25mZXJlbmNlcy8zIgogICAgfSwKICAgICJmcmFuY2hpc2UiIDogewogICAgICAiZnJhbmNoaXNlSWQiIDogMjYsCiAgICAgICJ0ZWFtTmFtZSIgOiAiSHVycmljYW5lcyIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2ZyYW5jaGlzZXMvMjYiCiAgICB9LAogICAgInNob3J0TmFtZSIgOiAiSGFydGZvcmQiLAogICAgImZyYW5jaGlzZUlkIiA6IDI2LAogICAgImFjdGl2ZSIgOiBmYWxzZQogIH0gXQp9
+  recorded_at: Tue, 05 Oct 2021 06:25:59 GMT
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/teams/34?expand=team.schedule.next
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '374'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=60, public
+      Date:
+      - Tue, 05 Oct 2021 06:25:59 GMT
+      Expires:
+      - Tue, 05 Oct 2021 06:27:00 GMT
+      Server:
+      - Apache-Coyote/1.1
+      X-Edge-Origin-Shield-Skipped:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 e16a606a5f3ac7d1b652d993a78c480d.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - s2y04c_tkSd40apVgD3WA9Rd8L2_yYSPeBtVl2hVM2PyqIP83kjmWA==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjEuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAidGVhbXMiIDogWyB7CiAgICAiaWQiIDogMzQsCiAgICAibmFtZSIgOiAiSGFydGZvcmQgV2hhbGVycyIsCiAgICAibGluayIgOiAiL2FwaS92MS90ZWFtcy8zNCIsCiAgICAiYWJicmV2aWF0aW9uIiA6ICJIRkQiLAogICAgInRlYW1OYW1lIiA6ICJXaGFsZXJzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIkhhcnRmb3JkIiwKICAgICJkaXZpc2lvbiIgOiB7CiAgICAgICJpZCIgOiAxMSwKICAgICAgIm5hbWUiIDogIkFkYW1zIiwKICAgICAgImxpbmsiIDogIi9hcGkvdjEvZGl2aXNpb25zLzExIgogICAgfSwKICAgICJjb25mZXJlbmNlIiA6IHsKICAgICAgImlkIiA6IDMsCiAgICAgICJuYW1lIiA6ICJQcmluY2Ugb2YgV2FsZXMiLAogICAgICAibGluayIgOiAiL2FwaS92MS9jb25mZXJlbmNlcy8zIgogICAgfSwKICAgICJmcmFuY2hpc2UiIDogewogICAgICAiZnJhbmNoaXNlSWQiIDogMjYsCiAgICAgICJ0ZWFtTmFtZSIgOiAiSHVycmljYW5lcyIsCiAgICAgICJsaW5rIiA6ICIvYXBpL3YxL2ZyYW5jaGlzZXMvMjYiCiAgICB9LAogICAgInNob3J0TmFtZSIgOiAiSGFydGZvcmQiLAogICAgImZyYW5jaGlzZUlkIiA6IDI2LAogICAgImFjdGl2ZSIgOiBmYWxzZQogIH0gXQp9
+  recorded_at: Tue, 05 Oct 2021 06:25:59 GMT
+recorded_with: VCR 6.0.0

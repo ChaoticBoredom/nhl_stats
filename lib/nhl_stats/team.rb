@@ -18,6 +18,11 @@ module NHLStats
       roster_response_to_players(response)
     end
 
+    def next_game
+      response = Faraday.get("#{API_ROOT}/teams/#{id}", :expand => "team.schedule.next")
+      next_game_response_to_game(response)
+    end
+
     def previous_game
       response = Faraday.get("#{API_ROOT}/teams/#{id}", :expand => "team.schedule.previous")
       previous_game_response_to_game(response)
@@ -44,16 +49,35 @@ module NHLStats
       end
     end
 
+    def next_game_response_to_game(response)
+      dig_array = [
+        "teams",
+        0,
+        "nextGameSchedule",
+        "dates",
+        0,
+        "games",
+        0,
+      ]
+
+      game_data = JSON.parse(response.body).dig(*dig_array)
+      return nil unless game_data
+
+      NHLStats::Game.new(game_data)
+    end
+
     def previous_game_response_to_game(response)
-      game_data = JSON.parse(response.body).dig(
+      dig_array = [
         "teams",
         0,
         "previousGameSchedule",
         "dates",
         0,
         "games",
-        0
-      )
+        0,
+      ]
+
+      game_data = JSON.parse(response.body).dig(*dig_array)
 
       NHLStats::Game.new(game_data)
     end

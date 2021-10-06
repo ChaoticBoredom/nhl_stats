@@ -66,6 +66,43 @@ RSpec.describe NHLStats::Team do
     end
   end
 
+  describe "#next_game" do
+    context "with no game" do
+      it "should return nil" do
+        VCR.use_cassette("next_game_whalers") do
+          team = NHLStats::Team.find(34)
+          expect(team.next_game).to be_nil
+        end
+      end
+    end
+
+    context "with an active team" do
+      it "should return a Game" do
+        VCR.use_cassette("next_game") do
+          team = NHLStats::Team.find(20)
+          expect(team.next_game).to be_instance_of(NHLStats::Game)
+        end
+      end
+
+      # TODO: This test is brittle because updating the VCR will require
+      # updating the test data. Think of a better way to test this.
+      it "should return the next upcoming game" do
+        VCR.use_cassette("next_game") do
+          team = NHLStats::Team.find(20)
+          next_game = team.next_game
+
+          expect(next_game.date).to eq Time.new(2021, 10, 7, 0, 0, 0, 0)
+          expect(next_game.away_team_id).to eq 20
+          expect(next_game.away_team_name).to eq "Calgary Flames"
+          expect(next_game.away_score).to eq 0
+          expect(next_game.home_team_id).to eq 52
+          expect(next_game.home_team_name).to eq "Winnipeg Jets"
+          expect(next_game.home_score).to eq 0
+        end
+      end
+    end
+  end
+
   describe "#previous_game" do
     it "should return a Game" do
       VCR.use_cassette("previous_game") do
