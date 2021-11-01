@@ -4,8 +4,8 @@ module NHLStats
 
     def initialize(game_data)
       @id = game_data[:id] || game_data["gamePk"]
-      home_team_data(game_data)
-      away_team_data(game_data)
+      team_data(game_data, team: "home")
+      team_data(game_data, team: "away")
       @date = Time.parse(game_data.dig("periods", 0, "startTime") || game_data["gameDate"])
     end
 
@@ -33,18 +33,11 @@ module NHLStats
 
     private
 
-    def home_team_data(game_data)
-      home = game_data.dig("teams", "home")
-      @home_team_id = home.dig("team", "id")
-      @home_score = home["goals"] || home["score"]
-      @home_team_name = home.dig("team", "name")
-    end
-
-    def away_team_data(game_data)
-      away = game_data.dig("teams", "away")
-      @away_team_id = away.dig("team", "id")
-      @away_score = away["goals"] || away["score"]
-      @away_team_name = away.dig("team", "name")
+    def team_data(game_data, team:)
+      team_data = game_data.dig("teams", team)
+      instance_variable_set("@#{team}_team_id", team_data.dig("team", "id"))
+      instance_variable_set("@#{team}_score", team_data["goals"] || team_data["score"])
+      instance_variable_set("@#{team}_team_name", team_data.dig("team", "name"))
     end
   end
 end
