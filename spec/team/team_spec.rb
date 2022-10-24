@@ -91,12 +91,12 @@ RSpec.describe NHLStats::Team do
           team = NHLStats::Team.find(20)
           next_game = team.next_game
 
-          expect(next_game.date).to eq Time.new(2021, 10, 7, 0, 0, 0, 0)
-          expect(next_game.away_team_id).to eq 20
-          expect(next_game.away_team_name).to eq "Calgary Flames"
+          expect(next_game.date).to eq Time.new(2022, 10, 26, 1, 0, 0, 0)
+          expect(next_game.away_team_id).to eq 5
+          expect(next_game.away_team_name).to eq "Pittsburgh Penguins"
           expect(next_game.away_score).to eq 0
-          expect(next_game.home_team_id).to eq 52
-          expect(next_game.home_team_name).to eq "Winnipeg Jets"
+          expect(next_game.home_team_id).to eq 20
+          expect(next_game.home_team_name).to eq "Calgary Flames"
           expect(next_game.home_score).to eq 0
         end
       end
@@ -118,10 +118,10 @@ RSpec.describe NHLStats::Team do
         team = NHLStats::Team.find(20)
         previous_game = team.previous_game
 
-        expect(previous_game.date).to eq Time.new(2020, 8, 21, 2, 30, 0, 0)
-        expect(previous_game.away_team_id).to eq 25
-        expect(previous_game.away_score).to eq 7
-        expect(previous_game.away_team_name).to eq "Dallas Stars"
+        expect(previous_game.date).to eq Time.new(2022, 10, 23, 2, 00, 0, 0)
+        expect(previous_game.away_team_id).to eq 12
+        expect(previous_game.away_score).to eq 2
+        expect(previous_game.away_team_name).to eq "Carolina Hurricanes"
         expect(previous_game.home_team_id).to eq 20
         expect(previous_game.home_score).to eq 3
         expect(previous_game.home_team_name).to eq "Calgary Flames"
@@ -162,7 +162,7 @@ RSpec.describe NHLStats::Team do
     it "should accept filters for a limited team" do
       VCR.use_cassette("list_teams_filtered") do
         teams = NHLStats::Team.list(:active => true)
-        expect(teams.size).to eq 31
+        expect(teams.size).to eq 32
       end
     end
   end
