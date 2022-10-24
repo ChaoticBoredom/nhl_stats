@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v2.6.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -37,9 +37,9 @@ http_interactions:
       Cache-Control:
       - max-age=900, public
       Date:
-      - Sat, 31 Oct 2020 10:07:15 GMT
+      - Mon, 24 Oct 2022 05:56:07 GMT
       Expires:
-      - Sat, 31 Oct 2020 10:22:15 GMT
+      - Mon, 24 Oct 2022 06:11:07 GMT
       Server:
       - Apache-Coyote/1.1
       Vary:
@@ -47,15 +47,14 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 ce71f64ad5dca81beca846466f2d5008.cloudfront.net (CloudFront)
+      - 1.1 4201bd1d1fc37ea7749b3bd1b64fce02.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA19-C2
+      - YVR50-C1
       X-Amz-Cf-Id:
-      - 9pZE8EIx4wqeMoqBZVv2iCO_Rvi7GvaZpP_-szVwc8f4RRoz3rsMJw==
+      - NZ49zIL6MoAcnPoEkNJezEqXv32AAfZhvBGiK3VM6KqaQIYqyIG3Bw==
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjAuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAiZnJhbmNoaXNlcyIgOiBbIHsKICAgICJmcmFuY2hpc2VJZCIgOiAyLAogICAgImZpcnN0U2Vhc29uSWQiIDogMTkxNzE5MTgsCiAgICAibGFzdFNlYXNvbklkIiA6IDE5MTcxOTE4LAogICAgIm1vc3RSZWNlbnRUZWFtSWQiIDogNDEsCiAgICAidGVhbU5hbWUiIDogIldhbmRlcmVycyIsCiAgICAibG9jYXRpb25OYW1lIiA6ICJNb250cmVhbCIsCiAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIiCiAgfSwgewogICAgImZyYW5jaGlzZUlkIiA6IDMsCiAgICAiZmlyc3RTZWFzb25JZCIgOiAxOTE3MTkxOCwKICAgICJsYXN0U2Vhc29uSWQiIDogMTkzNDE5MzUsCiAgICAibW9zdFJlY2VudFRlYW1JZCIgOiA0NSwKICAgICJ0ZWFtTmFtZSIgOiAiRWFnbGVzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIlN0LiBMb3VpcyIsCiAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzMiCiAgfSwgewogICAgImZyYW5jaGlzZUlkIiA6IDUsCiAgICAiZmlyc3RTZWFzb25JZCIgOiAxOTE3MTkxOCwKICAgICJtb3N0UmVjZW50VGVhbUlkIiA6IDEwLAogICAgInRlYW1OYW1lIiA6ICJNYXBsZSBMZWFmcyIsCiAgICAibG9jYXRpb25OYW1lIiA6ICJUb3JvbnRvIiwKICAgICJsaW5rIiA6ICIvYXBpL3YxL2ZyYW5jaGlzZXMvNSIKICB9IF0KfQ==
-    http_version: 
-  recorded_at: Sat, 31 Oct 2020 10:07:15 GMT
-recorded_with: VCR 5.0.0
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjIuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAiZnJhbmNoaXNlcyIgOiBbIHsKICAgICJmcmFuY2hpc2VJZCIgOiAyLAogICAgImZpcnN0U2Vhc29uSWQiIDogMTkxNzE5MTgsCiAgICAibGFzdFNlYXNvbklkIiA6IDE5MTcxOTE4LAogICAgIm1vc3RSZWNlbnRUZWFtSWQiIDogNDEsCiAgICAidGVhbU5hbWUiIDogIldhbmRlcmVycyIsCiAgICAibG9jYXRpb25OYW1lIiA6ICJNb250cmVhbCIsCiAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIiCiAgfSwgewogICAgImZyYW5jaGlzZUlkIiA6IDMsCiAgICAiZmlyc3RTZWFzb25JZCIgOiAxOTE3MTkxOCwKICAgICJsYXN0U2Vhc29uSWQiIDogMTkzNDE5MzUsCiAgICAibW9zdFJlY2VudFRlYW1JZCIgOiA0NSwKICAgICJ0ZWFtTmFtZSIgOiAiRWFnbGVzIiwKICAgICJsb2NhdGlvbk5hbWUiIDogIlN0LiBMb3VpcyIsCiAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzMiCiAgfSwgewogICAgImZyYW5jaGlzZUlkIiA6IDUsCiAgICAiZmlyc3RTZWFzb25JZCIgOiAxOTE3MTkxOCwKICAgICJtb3N0UmVjZW50VGVhbUlkIiA6IDEwLAogICAgInRlYW1OYW1lIiA6ICJNYXBsZSBMZWFmcyIsCiAgICAibG9jYXRpb25OYW1lIiA6ICJUb3JvbnRvIiwKICAgICJsaW5rIiA6ICIvYXBpL3YxL2ZyYW5jaGlzZXMvNSIKICB9IF0KfQ==
+  recorded_at: Mon, 24 Oct 2022 05:56:07 GMT
+recorded_with: VCR 6.1.0
