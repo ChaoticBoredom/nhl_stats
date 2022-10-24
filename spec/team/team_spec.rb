@@ -118,7 +118,7 @@ RSpec.describe NHLStats::Team do
         team = NHLStats::Team.find(20)
         previous_game = team.previous_game
 
-        expect(previous_game.date).to eq Time.new(2022, 10, 23, 2, 00, 0, 0)
+        expect(previous_game.date).to eq Time.new(2022, 10, 23, 2, 0, 0, 0)
         expect(previous_game.away_team_id).to eq 12
         expect(previous_game.away_score).to eq 2
         expect(previous_game.away_team_name).to eq "Carolina Hurricanes"
