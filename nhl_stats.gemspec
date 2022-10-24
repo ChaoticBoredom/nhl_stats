@@ -29,4 +29,9 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "faraday", "~> 2.6.0"
   spec.add_dependency "json", "~> 2.6.2"
+
+  spec.add_development_dependency("rake")
+  spec.add_development_dependency("rspec")
+  spec.add_development_dependency("rubocop", "~> 1.36.0")
+  spec.add_development_dependency("vcr", "~> 6.1.0")
 end
