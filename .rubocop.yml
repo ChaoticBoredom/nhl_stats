@@ -1,3 +1,9 @@
+Gemspec/DeprecatedAttributeAssignment:
+  Enabled: true
+
+Gemspec/RequireMFA:
+  Enabled: true
+
 Layout/ArgumentAlignment:
   EnforcedStyle: with_fixed_indentation
 
@@ -9,6 +15,23 @@ Layout/FirstArrayElementIndentation:
 
 Layout/LineLength:
   Max: 120
+
+Lint/AmbiguousAssignment:
+  Enabled: true
+
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: true
+
+Lint/AmbiguousRange:
+  Enabled: true
+
+Lint/ConstantOverwrittenInRescue:
+  Enabled: true
+
+Lint/DuplicateBranch:
+  Enabled: true
+  IgnoreLiteralBranches: true
+  IgnoreConstantBranches: true
 
 Metrics/BlockLength:
   Exclude:
