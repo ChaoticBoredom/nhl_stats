@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.4
+      - Faraday v2.6.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -37,9 +37,9 @@ http_interactions:
       Cache-Control:
       - max-age=900, public
       Date:
-      - Sat, 31 Oct 2020 09:58:16 GMT
+      - Mon, 24 Oct 2022 05:56:06 GMT
       Expires:
-      - Sat, 31 Oct 2020 10:13:16 GMT
+      - Mon, 24 Oct 2022 06:11:07 GMT
       Server:
       - Apache-Coyote/1.1
       Vary:
@@ -47,15 +47,14 @@ http_interactions:
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 6172bb1a5d00a3b06ae3700570ebe117.cloudfront.net (CloudFront)
+      - 1.1 4f130b04fa4df2503556325c16eee9f2.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - SEA19-C2
+      - YVR50-C1
       X-Amz-Cf-Id:
-      - 3cTBP0nV5SrXN8vje_rxxkjYDFftSeZIXg4kP-Gsh6LcMcbgDfSNWQ==
+      - i2WAAiMHp7fv7FvkuiD9T0mZQCLpZUd1YMqQGAKCWzqk9M6r6b-YUw==
     body:
       encoding: ASCII-8BIT
       string: !binary |-
-        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjAuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAiZnJhbmNoaXNlcyIgOiBbIHsKICAgICJmcmFuY2hpc2VJZCIgOiAyLAogICAgImZpcnN0U2Vhc29uSWQiIDogMTkxNzE5MTgsCiAgICAibGFzdFNlYXNvbklkIiA6IDE5MTcxOTE4LAogICAgIm1vc3RSZWNlbnRUZWFtSWQiIDogNDEsCiAgICAidGVhbU5hbWUiIDogIldhbmRlcmVycyIsCiAgICAibG9jYXRpb25OYW1lIiA6ICJNb250cmVhbCIsCiAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIiCiAgfSBdCn0=
-    http_version: 
-  recorded_at: Sat, 31 Oct 2020 09:58:16 GMT
-recorded_with: VCR 5.0.0
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjIuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAiZnJhbmNoaXNlcyIgOiBbIHsKICAgICJmcmFuY2hpc2VJZCIgOiAyLAogICAgImZpcnN0U2Vhc29uSWQiIDogMTkxNzE5MTgsCiAgICAibGFzdFNlYXNvbklkIiA6IDE5MTcxOTE4LAogICAgIm1vc3RSZWNlbnRUZWFtSWQiIDogNDEsCiAgICAidGVhbU5hbWUiIDogIldhbmRlcmVycyIsCiAgICAibG9jYXRpb25OYW1lIiA6ICJNb250cmVhbCIsCiAgICAibGluayIgOiAiL2FwaS92MS9mcmFuY2hpc2VzLzIiCiAgfSBdCn0=
+  recorded_at: Mon, 24 Oct 2022 05:56:07 GMT
+recorded_with: VCR 6.1.0
