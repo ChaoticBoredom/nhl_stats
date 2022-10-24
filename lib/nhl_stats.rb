@@ -5,6 +5,7 @@ require "nhl_stats/franchise"
 require "nhl_stats/game"
 require "nhl_stats/player"
 require "nhl_stats/team"
+require "nhl_stats/schedule"
 
 require "faraday"
 require "json"

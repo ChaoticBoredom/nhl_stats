@@ -24,11 +24,7 @@ module NHLStats
     end
 
     def self.list(params = {})
-      response = Faraday.get("#{API_ROOT}/schedule", params)
-      JSON.parse(response.body).
-        fetch("dates", []).
-        map { |d| d.fetch("games", []).map { |g| NHLStats::Game.new(g) } }.
-        flatten
+      Schedule.list(params).flat_map(&:games)
     end
 
     private
