@@ -43,7 +43,9 @@ module NHLStats
 
     def roster_response_to_players(response)
       JSON.parse(response.body).fetch("roster", []).map do |p_data|
-        NHLStats::Player.new(p_data.delete("person").merge(p_data))
+        attributes = p_data.delete("person").merge(p_data)
+        attributes["currentTeam"] = { "id" => id }
+        NHLStats::Player.new(attributes)
       end
     end
 

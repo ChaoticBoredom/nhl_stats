@@ -1,13 +1,14 @@
 module NHLStats
   class Player
     attr_reader :id, :full_name, :first_name, :last_name, :number, :birth_date,
-      :nationality, :active, :position
+      :nationality, :active, :position, :team_id
 
     def initialize(player_data)
       @id = player_data["id"]
       @full_name = player_data["fullName"]
       @number = (player_data["primaryNumber"] || player_data["jerseyNumber"]).to_i
       @position = player_data.dig("primaryPosition", "abbreviation") || player_data.dig("position", "abbreviation")
+      @team_id = player_data["currentTeam"]["id"]
 
       # Roster response returns an array of players w/o the following
       if player_data.key?("firstName")
@@ -21,6 +22,10 @@ module NHLStats
       response = Faraday.get("#{API_ROOT}/people/#{id}")
       attributes = JSON.parse(response.body).dig("people", 0)
       new(attributes)
+    end
+
+    def team
+      @team ||= Team.find(team_id)
     end
 
     private

@@ -30,4 +30,16 @@ RSpec.describe NHLStats::Player do
       end
     end
   end
+
+  describe "#team" do
+    it "should return the team the player is on", :aggregate_failures do
+      VCR.use_cassettes([{ name: "single_player" }, { name: "single_team" }]) do
+        player = NHLStats::Player.find(8479314)
+
+        expect(NHLStats::Team).to receive(:find).with(player.team_id).and_call_original
+        expect(player.team).to be_instance_of(NHLStats::Team)
+        expect(player.team.id).to eq player.team_id
+      end
+    end
+  end
 end
