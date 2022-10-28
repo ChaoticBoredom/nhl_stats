@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/people/8478233/stats?season=20212022&stats=statsSingleSeason
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=9000, public
+      Date:
+      - Fri, 28 Oct 2022 21:34:14 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 4201bd1d1fc37ea7749b3bd1b64fce02.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - novo9ZQeJsXejwxeGu42D3NTmIui9c1mb3Zdf8WH-RD4WPmFH2519w==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjIuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAic3RhdHMiIDogWyB7CiAgICAidHlwZSIgOiB7CiAgICAgICJkaXNwbGF5TmFtZSIgOiAic3RhdHNTaW5nbGVTZWFzb24iLAogICAgICAiZ2FtZVR5cGUiIDogewogICAgICAgICJpZCIgOiAiUiIsCiAgICAgICAgImRlc2NyaXB0aW9uIiA6ICJSZWd1bGFyIHNlYXNvbiIsCiAgICAgICAgInBvc3RzZWFzb24iIDogZmFsc2UKICAgICAgfQogICAgfSwKICAgICJzcGxpdHMiIDogWyB7CiAgICAgICJzZWFzb24iIDogIjIwMjEyMDIyIiwKICAgICAgInN0YXQiIDogewogICAgICAgICJ0aW1lT25JY2UiIDogIjEyODk6MzciLAogICAgICAgICJhc3Npc3RzIiA6IDIwLAogICAgICAgICJnb2FscyIgOiAzNSwKICAgICAgICAicGltIiA6IDM4LAogICAgICAgICJzaG90cyIgOiAxODUsCiAgICAgICAgImdhbWVzIiA6IDgyLAogICAgICAgICJoaXRzIiA6IDczLAogICAgICAgICJwb3dlclBsYXlHb2FscyIgOiA4LAogICAgICAgICJwb3dlclBsYXlQb2ludHMiIDogMTEsCiAgICAgICAgInBvd2VyUGxheVRpbWVPbkljZSIgOiAiMTQ3OjI1IiwKICAgICAgICAiZXZlblRpbWVPbkljZSIgOiAiMTAzNjoxNSIsCiAgICAgICAgInBlbmFsdHlNaW51dGVzIiA6ICIzOCIsCiAgICAgICAgImZhY2VPZmZQY3QiIDogMzguMTgsCiAgICAgICAgInNob3RQY3QiIDogMTguOSwKICAgICAgICAiZ2FtZVdpbm5pbmdHb2FscyIgOiA4LAogICAgICAgICJvdmVyVGltZUdvYWxzIiA6IDAsCiAgICAgICAgInNob3J0SGFuZGVkR29hbHMiIDogMiwKICAgICAgICAic2hvcnRIYW5kZWRQb2ludHMiIDogMywKICAgICAgICAic2hvcnRIYW5kZWRUaW1lT25JY2UiIDogIjEwNTo1NyIsCiAgICAgICAgImJsb2NrZWQiIDogMzIsCiAgICAgICAgInBsdXNNaW51cyIgOiAyMCwKICAgICAgICAicG9pbnRzIiA6IDU1LAogICAgICAgICJzaGlmdHMiIDogMTgwNCwKICAgICAgICAidGltZU9uSWNlUGVyR2FtZSIgOiAiMTU6NDMiLAogICAgICAgICJldmVuVGltZU9uSWNlUGVyR2FtZSIgOiAiMTI6MzgiLAogICAgICAgICJzaG9ydEhhbmRlZFRpbWVPbkljZVBlckdhbWUiIDogIjAxOjE3IiwKICAgICAgICAicG93ZXJQbGF5VGltZU9uSWNlUGVyR2FtZSIgOiAiMDE6NDciCiAgICAgIH0KICAgIH0gXQogIH0gXQp9
+  recorded_at: Fri, 28 Oct 2022 21:34:15 GMT
+recorded_with: VCR 6.1.0

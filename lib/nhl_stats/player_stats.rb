@@ -6,7 +6,7 @@ module NHLStats
     # PIM and Penalty Minutes are the same, one numeric the other a string, but I
     # suspect that they may not be present in all data sets so duplicating them
     # here anyways
-    attr_reader :time_on_ice, :assists, :goals, :pim, :shots, :games, :hits,
+    attr_reader :season, :time_on_ice, :assists, :goals, :pim, :shots, :games, :hits,
       :power_play_goals, :power_play_points, :power_play_time_on_ice, :even_time_on_ice,
       :penalty_minutes, :face_off_percent, :shot_percent, :game_winning_goals,
       :over_time_goals, :short_handed_goals, :short_handed_points,
@@ -15,13 +15,14 @@ module NHLStats
       :short_handed_time_on_ice_per_game, :power_play_time_on_ice_per_game
 
     def initialize(player_stats_data)
-      simple_stats(player_stats_data)
+      @season = player_stats_data["season"]
+      simple_stats(player_stats_data["stat"])
 
-      goal_stats(player_stats_data)
-      points_stats(player_stats_data)
+      goal_stats(player_stats_data["stat"])
+      points_stats(player_stats_data["stat"])
 
-      percent_stats(player_stats_data)
-      time_on_ice_stats(player_stats_data)
+      percent_stats(player_stats_data["stat"])
+      time_on_ice_stats(player_stats_data["stat"])
     end
 
     private
@@ -33,9 +34,9 @@ module NHLStats
       @games = player_stats_data.fetch("games", nil)
       @hits = player_stats_data.fetch("hits", nil)
       @penalty_minutes = player_stats_data.fetch("penaltyMinutes", nil)
-      @blocked_shots = player_stats_data("blocked", nil)
-      @plus_minus = player_stats_data("plusMinus", nil)
-      @shifts = player_stats_data("shifts", nil)
+      @blocked_shots = player_stats_data.fetch("blocked", nil)
+      @plus_minus = player_stats_data.fetch("plusMinus", nil)
+      @shifts = player_stats_data.fetch("shifts", nil)
     end
 
     def goal_stats(player_stats_data)
@@ -49,7 +50,7 @@ module NHLStats
     def points_stats(player_stats_data)
       @power_play_points = player_stats_data.fetch("powerPlayPoints", nil)
       @short_handed_points = player_stats_data.fetch("shortHandedPoints", nil)
-      @points = player_stats_data("points", nil)
+      @points = player_stats_data.fetch("points", nil)
     end
 
     def percent_stats(player_stats_data)
@@ -62,10 +63,10 @@ module NHLStats
       @power_play_time_on_ice = player_stats_data.fetch("powerPlayTimeOnIce", nil)
       @even_time_on_ice = player_stats_data.fetch("evenTimeOnIce", nil)
       @short_handed_time_on_ice = player_stats_data.fetch("shortHandedTimeOnIce", nil)
-      @time_on_ice_per_game = player_stats_data("timeOnIcePerGame", nil)
-      @even_time_on_ice_per_game = player_stats_data("evenTimeOnIcePerGame", nil)
-      @short_handed_time_on_ice_per_game = player_stats_data("shortHandedTimeOnIcePerGame", nil)
-      @power_play_time_on_ice_per_game = player_stats_data("powerPlayTimeOnIcePerGame")
+      @time_on_ice_per_game = player_stats_data.fetch("timeOnIcePerGame", nil)
+      @even_time_on_ice_per_game = player_stats_data.fetch("evenTimeOnIcePerGame", nil)
+      @short_handed_time_on_ice_per_game = player_stats_data.fetch("shortHandedTimeOnIcePerGame", nil)
+      @power_play_time_on_ice_per_game = player_stats_data.fetch("powerPlayTimeOnIcePerGame", nil)
     end
   end
 end

@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/people/8445131/stats?season=19211922&stats=statsSingleSeason
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=9000, public
+      Date:
+      - Fri, 28 Oct 2022 20:37:40 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 a6a02464d953c7252173cbc33e5dbd36.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - xckuaWJmAwv2gfvcN8cKJ60FZcBUXNCNWteg6HXYUYLaqM-Xk3Xa3g==
+      Age:
+      - '4174'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjIuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAic3RhdHMiIDogWyB7CiAgICAidHlwZSIgOiB7CiAgICAgICJkaXNwbGF5TmFtZSIgOiAic3RhdHNTaW5nbGVTZWFzb24iLAogICAgICAiZ2FtZVR5cGUiIDogewogICAgICAgICJpZCIgOiAiUiIsCiAgICAgICAgImRlc2NyaXB0aW9uIiA6ICJSZWd1bGFyIHNlYXNvbiIsCiAgICAgICAgInBvc3RzZWFzb24iIDogZmFsc2UKICAgICAgfQogICAgfSwKICAgICJzcGxpdHMiIDogWyB7CiAgICAgICJzZWFzb24iIDogIjE5MjExOTIyIiwKICAgICAgInN0YXQiIDogewogICAgICAgICJhc3Npc3RzIiA6IDUsCiAgICAgICAgImdvYWxzIiA6IDEsCiAgICAgICAgInBpbSIgOiA0LAogICAgICAgICJnYW1lcyIgOiAxOCwKICAgICAgICAicGVuYWx0eU1pbnV0ZXMiIDogIjQiLAogICAgICAgICJnYW1lV2lubmluZ0dvYWxzIiA6IDEsCiAgICAgICAgIm92ZXJUaW1lR29hbHMiIDogMCwKICAgICAgICAicG9pbnRzIiA6IDYKICAgICAgfQogICAgfSBdCiAgfSBdCn0=
+  recorded_at: Fri, 28 Oct 2022 21:47:15 GMT
+recorded_with: VCR 6.1.0
