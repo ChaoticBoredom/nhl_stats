@@ -46,6 +46,15 @@ RSpec.describe NHLStats::Player do
         expect(season_stats.season).to eq "20212022"
       end
     end
+
+    context "with a season the player did not play" do
+      it "should return nil" do
+        VCR.use_cassette("single_player_non_played_season") do
+          player = NHLStats::Player.find(8478233)
+          expect(player.season_stats("19211922")).to be_nil
+        end
+      end
+    end
   end
 
   describe "#current_season_stats" do
