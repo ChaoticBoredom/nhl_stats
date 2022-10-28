@@ -63,5 +63,14 @@ RSpec.describe NHLStats::Player do
         expect(season_stats.season).to eq NHLStats.current_season_id
       end
     end
+
+    context "with retired player" do
+      it "should return nil" do
+        VCR.use_cassette("current_season_retired_stats") do
+          player = NHLStats::Player.find(8462042)
+          expect(player.current_season_stats).to be_nil
+        end
+      end
+    end
   end
 end

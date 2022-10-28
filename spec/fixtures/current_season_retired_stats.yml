@@ -1,0 +1,178 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/people/8462042
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=9000, public
+      Date:
+      - Fri, 28 Oct 2022 22:04:24 GMT
+      Expires:
+      - Sat, 29 Oct 2022 00:34:25 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 9c335c5f85533b11cbfd38dc7cc60c16.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - LiiQqH2ou5jBKgGe0Wu_Jfo0DduBoQ8mrGsszusPc1leZ6QjpRg9Ng==
+      Age:
+      - '203'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjIuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAicGVvcGxlIiA6IFsgewogICAgImlkIiA6IDg0NjIwNDIsCiAgICAiZnVsbE5hbWUiIDogIkphcm9tZSBJZ2lubGEiLAogICAgImxpbmsiIDogIi9hcGkvdjEvcGVvcGxlLzg0NjIwNDIiLAogICAgImZpcnN0TmFtZSIgOiAiSmFyb21lIiwKICAgICJsYXN0TmFtZSIgOiAiSWdpbmxhIiwKICAgICJwcmltYXJ5TnVtYmVyIiA6ICIxMiIsCiAgICAiYmlydGhEYXRlIiA6ICIxOTc3LTA3LTAxIiwKICAgICJiaXJ0aENpdHkiIDogIkVkbW9udG9uIiwKICAgICJiaXJ0aFN0YXRlUHJvdmluY2UiIDogIkFCIiwKICAgICJiaXJ0aENvdW50cnkiIDogIkNBTiIsCiAgICAibmF0aW9uYWxpdHkiIDogIkNBTiIsCiAgICAiaGVpZ2h0IiA6ICI2JyAxXCIiLAogICAgIndlaWdodCIgOiAyMTAsCiAgICAiYWN0aXZlIiA6IGZhbHNlLAogICAgInJvb2tpZSIgOiBmYWxzZSwKICAgICJzaG9vdHNDYXRjaGVzIiA6ICJSIiwKICAgICJyb3N0ZXJTdGF0dXMiIDogIlkiLAogICAgInByaW1hcnlQb3NpdGlvbiIgOiB7CiAgICAgICJjb2RlIiA6ICJSIiwKICAgICAgIm5hbWUiIDogIlJpZ2h0IFdpbmciLAogICAgICAidHlwZSIgOiAiRm9yd2FyZCIsCiAgICAgICJhYmJyZXZpYXRpb24iIDogIlJXIgogICAgfQogIH0gXQp9
+  recorded_at: Fri, 28 Oct 2022 22:07:48 GMT
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/seasons/current
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=900, public
+      Date:
+      - Fri, 28 Oct 2022 21:58:56 GMT
+      Expires:
+      - Fri, 28 Oct 2022 22:13:56 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 feda34dcbf6a00e232656b7983c2c7f0.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - fOFD9teWwIP7h0sKz5lE-Ldtz8HqdDNpEIWVmBLab_VTCyWvuuFRBA==
+      Age:
+      - '532'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjIuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAic2Vhc29ucyIgOiBbIHsKICAgICJzZWFzb25JZCIgOiAiMjAyMjIwMjMiLAogICAgInJlZ3VsYXJTZWFzb25TdGFydERhdGUiIDogIjIwMjItMTAtMDciLAogICAgInJlZ3VsYXJTZWFzb25FbmREYXRlIiA6ICIyMDIzLTA0LTEzIiwKICAgICJzZWFzb25FbmREYXRlIiA6ICIyMDIzLTA2LTMwIiwKICAgICJudW1iZXJPZkdhbWVzIiA6IDgyLAogICAgInRpZXNJblVzZSIgOiBmYWxzZSwKICAgICJvbHltcGljc1BhcnRpY2lwYXRpb24iIDogZmFsc2UsCiAgICAiY29uZmVyZW5jZXNJblVzZSIgOiB0cnVlLAogICAgImRpdmlzaW9uc0luVXNlIiA6IHRydWUsCiAgICAid2lsZENhcmRJblVzZSIgOiB0cnVlCiAgfSBdCn0=
+  recorded_at: Fri, 28 Oct 2022 22:07:48 GMT
+- request:
+    method: get
+    uri: https://statsapi.web.nhl.com/api/v1/people/8462042/stats?season=20222023&stats=statsSingleSeason
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.6.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Access-Control-Allow-Methods:
+      - GET, POST, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Content-Type,X-Requested-With,accept,Origin,Access-Control-Request-Method,Access-Control-Request-Headers,Authorization
+      Cache-Control:
+      - max-age=300, public
+      Date:
+      - Fri, 28 Oct 2022 22:04:28 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Hit from cloudfront
+      Via:
+      - 1.1 f4ae8c7714a9bd89828bad25fc96be24.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - YVR50-C1
+      X-Amz-Cf-Id:
+      - IXuXheMI36HItlJ4Dj2HD09kSJGCxDx-hU1eblMUushjiN9f3JBIpA==
+      Age:
+      - '200'
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        ewogICJjb3B5cmlnaHQiIDogIk5ITCBhbmQgdGhlIE5ITCBTaGllbGQgYXJlIHJlZ2lzdGVyZWQgdHJhZGVtYXJrcyBvZiB0aGUgTmF0aW9uYWwgSG9ja2V5IExlYWd1ZS4gTkhMIGFuZCBOSEwgdGVhbSBtYXJrcyBhcmUgdGhlIHByb3BlcnR5IG9mIHRoZSBOSEwgYW5kIGl0cyB0ZWFtcy4gwqkgTkhMIDIwMjIuIEFsbCBSaWdodHMgUmVzZXJ2ZWQuIiwKICAic3RhdHMiIDogWyB7CiAgICAidHlwZSIgOiB7CiAgICAgICJkaXNwbGF5TmFtZSIgOiAic3RhdHNTaW5nbGVTZWFzb24iLAogICAgICAiZ2FtZVR5cGUiIDogewogICAgICAgICJpZCIgOiAiUiIsCiAgICAgICAgImRlc2NyaXB0aW9uIiA6ICJSZWd1bGFyIHNlYXNvbiIsCiAgICAgICAgInBvc3RzZWFzb24iIDogZmFsc2UKICAgICAgfQogICAgfSwKICAgICJzcGxpdHMiIDogWyBdCiAgfSBdCn0=
+  recorded_at: Fri, 28 Oct 2022 22:07:48 GMT
+recorded_with: VCR 6.1.0

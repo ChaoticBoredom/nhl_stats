@@ -28,7 +28,7 @@ module NHLStats
         :stats => "statsSingleSeason",
         :season => season)
       attributes = JSON.parse(response.body).dig("stats", 0, "splits", 0)
-      NHLStats::PlayerStats.new(attributes)
+      NHLStats::PlayerStats.new(attributes) unless attributes.nil?
     end
 
     def current_season_stats
