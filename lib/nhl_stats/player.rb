@@ -23,6 +23,18 @@ module NHLStats
       new(attributes)
     end
 
+    def season_stats(season)
+      response = Faraday.get("#{API_ROOT}/people/#{id}/stats",
+        :stats => "statsSingleSeason",
+        :season => season)
+      attributes = JSON.parse(response.body).dig("stats", 0, "splits", 0)
+      NHLStats::PlayerStats.new(attributes) unless attributes.nil?
+    end
+
+    def current_season_stats
+      season_stats(NHLStats.current_season_id)
+    end
+
     private
 
     def roster_response_data(player_data)
